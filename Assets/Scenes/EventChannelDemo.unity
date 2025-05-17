@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83942afa19265344f853f44225aef124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionEmitterEventChannel: {fileID: 11400000, guid: e5aecc3bee2db254cac827491b1f0616, type: 2}
+  positionEventChannel: {fileID: 11400000, guid: e5aecc3bee2db254cac827491b1f0616, type: 2}
 --- !u!4 &304302907
 Transform:
   m_ObjectHideFlags: 0
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2077e1c09b960824b94122783c67ce66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveEventChannel: {fileID: 11400000, guid: 602ae7efaeda530488e905486db75814, type: 2}
-  jumpEventChannel: {fileID: 11400000, guid: 2f5e50565af548e47905a3ed698c8c18, type: 2}
+  moveInputEventChannel: {fileID: 11400000, guid: 602ae7efaeda530488e905486db75814, type: 2}
+  jumpInputEventChannel: {fileID: 11400000, guid: 2f5e50565af548e47905a3ed698c8c18, type: 2}
 --- !u!4 &409562416
 Transform:
   m_ObjectHideFlags: 0

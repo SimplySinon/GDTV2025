@@ -4,16 +4,16 @@ using UnityEngine;
 public class Vector2ListenerExample : MonoBehaviour
 {
     [Header("Inbound Communication")]
-    public Vector2EventChannelSO positionEmitterEventChannel;
+    public Vector2EventChannelSO positionEventChannel;
 
     void OnEnable()
     {
-        Helpers.SubscribeIfNotNull(positionEmitterEventChannel, OnPosition);
+        Helpers.SubscribeIfNotNull(positionEventChannel, OnPosition);
     }
 
     void OnDisable()
     {
-        Helpers.UnsubscribeIfNotNull(positionEmitterEventChannel, OnPosition);
+        Helpers.UnsubscribeIfNotNull(positionEventChannel, OnPosition);
     }
 
     void OnPosition(Vector2 position)
