@@ -20,7 +20,7 @@ public class InputManager : MonoBehaviour
     {
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
 
-        // Raising an event of type moveValue
+        // Raising an event of type Vector2
         Helpers.RaiseIfNotNull(moveEventChannel, moveValue);
 
         //Raise a bool event to represent the Jump key being pressed
