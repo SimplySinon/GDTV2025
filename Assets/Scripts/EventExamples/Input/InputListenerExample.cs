@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Example : MonoBehaviour
+public class InputListenerExample : MonoBehaviour
 {
     [Header("Inbound Communication")]
     [SerializeField] Vector2EventChannelSO moveInputEventChannel;

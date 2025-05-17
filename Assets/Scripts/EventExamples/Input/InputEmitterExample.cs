@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputManager : MonoBehaviour
+public class InputEmitterExample : MonoBehaviour
 {
     [Header("Outbound Communication")]
     //This takes a scriptable object of type Vector2EventChannelSO to send Vector2 Events
