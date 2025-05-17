@@ -20,11 +20,13 @@ public class Example : MonoBehaviour
 
     void OnMoveInput(Vector2 moveDirection)
     {
-        Debug.Log(moveDirection);
+        // Listening for move input
+        if (moveDirection != Vector2.zero) Debug.Log(moveDirection);
     }
 
     void OnJumpInput(bool jumpInput)
     {
-        Debug.Log(jumpInput);
+        // Listening for jump input
+        if (jumpInput) Debug.Log(jumpInput);
     }
 }
