@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDirectionEventChannel: {fileID: 11400000, guid: 602ae7efaeda530488e905486db75814, type: 2}
   playerStateEventChannel: {fileID: 11400000, guid: c210aeb0242f0ca48b383ab74ec95a89, type: 2}
+  attackInputEventChannel: {fileID: 11400000, guid: 0c2cbcf59568ead42a25bb158ca99dd1, type: 2}
   speed: 5
 --- !u!95 &4376222799407061874
 Animator:

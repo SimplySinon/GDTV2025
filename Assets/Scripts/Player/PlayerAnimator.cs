@@ -8,15 +8,14 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] Vector2EventChannelSO moveInputEventChannelSO;
     [SerializeField] CharacterStateEventChannelSO playerStateEventChannelSO;
 
-    private Animator animator;
 
+    private Animator animator;
     private State playerState;
     private Vector2 moveInput;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-
     }
 
     void OnEnable()
@@ -34,25 +33,25 @@ public class PlayerAnimator : MonoBehaviour
     void OnPlayerState(CharacterState state)
     {
         playerState = state.State;
+        Animate();
     }
 
     void OnMoveInput(Vector2 input)
     {
-        moveInput = input;
+        if (Vector2.zero != input)
+            moveInput = input;
     }
 
     void Update()
     {
-        Animate();
     }
 
     private void Animate()
     {
         animator.SetBool("isMoving", playerState == State.Moving);
-        if (playerState == State.Moving)
-        {
-            animator.SetFloat("x", moveInput.x);
-            animator.SetFloat("y", moveInput.y);
-        }
+        animator.SetBool("isAttacking", playerState == State.Attacking);
+
+        animator.SetFloat("x", moveInput.x);
+        animator.SetFloat("y", moveInput.y);
     }
 }
