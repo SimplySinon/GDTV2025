@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     [Space, Header("Character Collision Settings")]
     [SerializeField] private CircleCollider2D hitboxCollider;
     [SerializeField] private CapsuleCollider2D bodyCollider;
-    [SerializeField] private LayerMask canCollideWithHitbox;
-    [SerializeField] private LayerMask playerBodyCanCollideWith;
     [SerializeField] private Vector2 bodyColliderSize = new(1.5f, 1);
     [SerializeField] private Vector2 bodyColliderOffset = new(0, 0.5f);
     [SerializeField] private float hitboxColliderRadius = 1;
@@ -55,12 +53,10 @@ public class PlayerController : MonoBehaviour
         // Configure Hitbox Collider
         hitboxCollider.offset = hitboxColliderOffset;
         hitboxCollider.radius = hitboxColliderRadius;
-        // hitboxCollider.includeLayers = canCollideWithHitbox;
 
         // Configure Body Collider
         bodyCollider.offset = bodyColliderOffset;
         bodyCollider.size = bodyColliderSize;
-        // bodyCollider.includeLayers = playerBodyCanCollideWith;
 
         // Configure Attack Collider
         attackCollider.includeLayers = attackable;
