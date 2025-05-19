@@ -3,22 +3,24 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(CircleCollider2D))]
-[RequireComponent(typeof(CapsuleCollider2D))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Outbound Communication")]
     [SerializeField] private Vector2EventChannelSO moveDirectionEventChannel;
     [SerializeField] private CharacterStateEventChannelSO playerStateEventChannel;
+    [SerializeField] private Vector2EventChannelSO playerPositionEventChannel;
     [SerializeField] private BoolEventChannelSO attackInputEventChannel;
+    [SerializeField] private IntEventChannelSO enemyIdEventChannel;
 
     [Space, Header("Character Settings")]
     [SerializeField] private float speed = 5f;
     [SerializeField] float attackCooldown;
 
     [Space, Header("Character Collision Settings")]
-    [SerializeField] private LayerMask canAffectPlayer;
-    [SerializeField] private LayerMask playerCanInteract;
+    [SerializeField] private CircleCollider2D hitboxCollider;
+    [SerializeField] private CapsuleCollider2D bodyCollider;
+    [SerializeField] private LayerMask canCollideWithHitbox;
+    [SerializeField] private LayerMask playerBodyCanCollideWith;
     [SerializeField] private Vector2 bodyColliderSize = new(1.5f, 1);
     [SerializeField] private Vector2 bodyColliderOffset = new(0, 0.5f);
     [SerializeField] private float hitboxColliderRadius = 1;
@@ -36,8 +38,7 @@ public class PlayerController : MonoBehaviour
     private float attackTimer;
     private Vector2 moveInput;
     private Rigidbody2D rb;
-    private CircleCollider2D hitboxCollider;
-    private CapsuleCollider2D bodyCollider;
+
     private State currentState;
     private bool isAttackingInput = false;
 
@@ -45,25 +46,29 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        hitboxCollider = GetComponent<CircleCollider2D>();
-        bodyCollider = GetComponent<CapsuleCollider2D>();
+
+        if (bodyCollider == null || hitboxCollider == null)
+        {
+            throw new UnityException("Player Colliders not Assigned");
+        }
 
         // Configure Hitbox Collider
         hitboxCollider.offset = hitboxColliderOffset;
         hitboxCollider.radius = hitboxColliderRadius;
-        hitboxCollider.includeLayers = canAffectPlayer;
+        // hitboxCollider.includeLayers = canCollideWithHitbox;
 
         // Configure Body Collider
         bodyCollider.offset = bodyColliderOffset;
         bodyCollider.size = bodyColliderSize;
-        bodyCollider.includeLayers = playerCanInteract;
-
+        // bodyCollider.includeLayers = playerBodyCanCollideWith;
 
         // Configure Attack Collider
         attackCollider.includeLayers = attackable;
 
         // Remove Gravity Effects
         rb.gravityScale = 0;
+
+
     }
 
     void OnEnable()
@@ -98,6 +103,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Move();
+        Helpers.RaiseIfNotNull(playerPositionEventChannel, transform.position);
     }
 
     private void OnAttackInput(bool attackInput)
@@ -169,10 +175,6 @@ public class PlayerController : MonoBehaviour
         {
             attackCollider.transform.localPosition = rightAttackPosition;
         }
-
-
-
-        // if (moveInput.x < 0 && )
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -180,6 +182,8 @@ public class PlayerController : MonoBehaviour
         if (attackable.Contains(other.gameObject.layer))
         {
             Debug.Log($"Attacking: {other.gameObject.name}");
+            EnemyController controller = other.GetComponent<EnemyController>();
+            Helpers.RaiseIfNotNull(enemyIdEventChannel, controller.GetEnemyId());
         }
     }
 }
