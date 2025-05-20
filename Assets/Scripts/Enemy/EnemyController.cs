@@ -7,7 +7,6 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [Header("Inbound Communication")]
-    [SerializeField] Vector2EventChannelSO playerPositionEventChannel;
     [SerializeField] IntEventChannelSO enemyIdEventChannel;
 
     [Header("Knockback Settings")]
@@ -18,32 +17,29 @@ public class EnemyController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Enemy self;
-    private Vector2 playerPosition;
-    private bool applyingKnockBack;
+    private EnemyMovementAIEngine movementEngine;
 
-    public void Initialize(EnemyTypeConfigSO type, Vector2 position)
+    public void Initialize(EnemyConfigSO type, Vector2 position, Transform player, Collider2D bounds)
     {
-        self = new(GetInstanceID(), type);
+        self = new(GetInstanceID(), type, player, bounds);
         transform.position = position;
+
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
+
+        if (rb == null) throw new UnityException("Rigidbody2D Componet not found on Enemy Object");
+
+        InitializeMovementEngine();
     }
 
     void OnEnable()
     {
-        Helpers.SubscribeIfNotNull(playerPositionEventChannel, OnPlayerPosition);
         Helpers.SubscribeIfNotNull(enemyIdEventChannel, OnEnemyTakingDamage);
     }
 
     void OnDisable()
     {
-        Helpers.UnsubscribeIfNotNull(playerPositionEventChannel, OnPlayerPosition);
         Helpers.UnsubscribeIfNotNull(enemyIdEventChannel, OnEnemyTakingDamage);
-    }
-
-    void OnPlayerPosition(Vector2 pos)
-    {
-        playerPosition = pos;
     }
 
     void OnEnemyTakingDamage(int enemyId)
@@ -51,45 +47,64 @@ public class EnemyController : MonoBehaviour
         if (enemyId == GetEnemyId())
         {
             Debug.Log($"I {name}:{GetEnemyId()} am taking Damage");
-
-            if (!applyingKnockBack)
-                StartCoroutine(StopKnockbackAfterDelay(knockbackDuration, playerPosition));
+            if (!movementEngine.IsApplyingKnockBack())
+                StartCoroutine(movementEngine.StopKnockbackAfterDelay());
         }
     }
 
+    // private System.Collections.IEnumerator StopKnockbackAfterDelay(float duration, Vector3 impactPoint)
+    // {
+    //     applyingKnockBack = true;
+    //     yield return new WaitForSeconds(delayBeforeKnockback);
+    //     // Calculate the knockback direction (from target to impact point)
+    //     Vector3 knockbackDirection = (transform.position - impactPoint).normalized;
+
+    //     // Apply the force
+    //     if (rb != null)
+    //     {
+    //         rb.AddForce(knockbackDirection * forceMagnitude, ForceMode2D.Impulse);
+    //     }
+
+    //     yield return new WaitForSeconds(duration);
+    //     rb.linearVelocity = Vector3.zero; // Stop the target's movement
+    //     rb.angularVelocity = 0; // Stop the target's rotation
+    //     applyingKnockBack = false;
+    // }
     public int GetEnemyId()
     {
         return self.EnemyId;
     }
 
-    private void Move()
+    void Update()
     {
-        // Do Move
-    }
-
-    private void Attack()
-    {
-        // Do Attak
+        movementEngine.Update();
     }
 
 
-    private System.Collections.IEnumerator StopKnockbackAfterDelay(float duration, Vector3 impactPoint)
-    {
-        applyingKnockBack = true;
-        yield return new WaitForSeconds(delayBeforeKnockback);
-        // Calculate the knockback direction (from target to impact point)
-        Vector3 knockbackDirection = (transform.position - impactPoint).normalized;
 
-        // Apply the force
-        if (rb != null)
+    void InitializeMovementEngine()
+    {
+        switch (self.EnemyConfig.MovementAIType)
         {
-            rb.AddForce(knockbackDirection * forceMagnitude, ForceMode2D.Impulse);
+            case EnemyMovementAIType.Charge:
+                movementEngine = new ChargeAI(rb, gameObject, self.Player, self.MovementBounds, self.EnemyConfig);
+                break;
+            case EnemyMovementAIType.FollowWithBuffer:
+                movementEngine = new FollowWithBufferAI(rb, gameObject, self.Player, self.MovementBounds, self.EnemyConfig);
+                break;
+            case EnemyMovementAIType.KeepRelativeOffset:
+                movementEngine = new KeepRelativeOffsetAI(rb, gameObject, self.Player, self.MovementBounds, self.EnemyConfig);
+                break;
+            case EnemyMovementAIType.RandomPatrol:
+                movementEngine = new RandomPatrolAI(rb, gameObject, self.Player, self.MovementBounds, self.EnemyConfig);
+                break;
+            case EnemyMovementAIType.WanderAndCharge:
+                movementEngine = new WanderAndChargeAI(rb, gameObject, self.Player, self.MovementBounds, self.EnemyConfig);
+                break;
         }
 
-        yield return new WaitForSeconds(duration);
-        rb.linearVelocity = Vector3.zero; // Stop the target's movement
-        rb.angularVelocity = 0; // Stop the target's rotation
-        applyingKnockBack = false;
+        if (hasKnockback)
+            movementEngine.InitializeKnockBack(forceMagnitude, knockbackDuration, delayBeforeKnockback);
     }
 
 }

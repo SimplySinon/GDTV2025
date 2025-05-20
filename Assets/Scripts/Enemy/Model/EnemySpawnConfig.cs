@@ -5,6 +5,6 @@ using UnityEngine;
 public class EnemySpawnConfig
 {
     public EnemyController Enemy;
-    public EnemyTypeConfigSO Config;
+    public EnemyConfigSO Config;
     public List<Vector2> SpawnLocations;
 }
