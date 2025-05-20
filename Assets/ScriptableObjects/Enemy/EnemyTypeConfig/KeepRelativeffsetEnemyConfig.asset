@@ -10,8 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 321da5a61e98272428b2cb91eff715d9, type: 3}
-  m_Name: BasicEnemyTypeConfig
+  m_Name: KeepRelativeffsetEnemyConfig
   m_EditorClassIdentifier: 
-  MoveSpeed: 5
-  PlayerSearchCooldown: 5
-  AttackCooldown: 5
+  ConfigName: FollowWithBufferEnemy
+  MoveSpeed: 10
+  ChargeSpeed: 8
+  WanderSpeed: 3
+  FollowSpeed: 8
+  RelativeOffset: {x: 3, y: 3}
+  ChargeTime: 6
+  ChargeCooldown: 3
+  ProximityRange: 5
+  BufferMinDistance: 5
+  BufferMaxDistance: 8
+  MaxHealth: 0
+  MaxDamage: 0
+  MinDamage: 0
+  ValueDiviation: 2
+  MovementAIType: 2

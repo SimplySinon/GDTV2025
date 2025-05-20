@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2EventChannelSO moveDirectionEventChannel;
     [SerializeField] private CharacterStateEventChannelSO playerStateEventChannel;
     [SerializeField] private Vector2EventChannelSO playerPositionEventChannel;
+    [SerializeField] private TransformEventChannelSO playerTransformEventChannel;
     [SerializeField] private BoolEventChannelSO attackInputEventChannel;
     [SerializeField] private IntEventChannelSO enemyIdEventChannel;
 
@@ -63,8 +64,7 @@ public class PlayerController : MonoBehaviour
 
         // Remove Gravity Effects
         rb.gravityScale = 0;
-
-
+        Helpers.RaiseIfNotNull(playerTransformEventChannel, transform);
     }
 
     void OnEnable()
