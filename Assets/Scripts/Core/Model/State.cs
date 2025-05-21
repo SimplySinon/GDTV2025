@@ -6,5 +6,8 @@ public enum State
     TakingDamage,
     Interacting,
     Pushing,
-    Pulling
+    Pulling,
+    Spell,
+    Defending,
+    Dead
 }

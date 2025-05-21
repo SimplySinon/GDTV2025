@@ -102,8 +102,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce4d8c9c42a68749a3a1e7dd143cfd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPositionEventChannel: {fileID: 11400000, guid: 16db1e4750c08f240ae7877ae5fae8ab, type: 2}
-  enemyIdEventChannel: {fileID: 11400000, guid: f0df67bd5dc6e00469630eb818b2b143, type: 2}
+  playerAttackEventChannel: {fileID: 11400000, guid: be15377837b2b3e468cd2517f3b81907, type: 2}
+  enemyDestroyedEventChannel: {fileID: 11400000, guid: 84674f87aa6b9b84591a995b70499809, type: 2}
+  enemyAttackEventChannel: {fileID: 11400000, guid: 0493fe75ae4676e47a284f3ecccf26be, type: 2}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 256
   hasKnockback: 1
   forceMagnitude: 10
   knockbackDuration: 0.15

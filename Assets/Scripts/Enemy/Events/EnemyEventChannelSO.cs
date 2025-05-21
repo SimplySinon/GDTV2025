@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "EnemyEventChannelSO", menuName = "Events/Generic/Enemy Event Channel")]
+[CreateAssetMenu(fileName = "EnemyEventChannelSO", menuName = "Events/Enemy/Enemy Event Channel")]
 public class EnemyEventChannelSO : GenericEventChannelSO<Enemy>
 {
 }

@@ -7,7 +7,14 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [Header("Inbound Communication")]
-    [SerializeField] IntEventChannelSO enemyIdEventChannel;
+    [SerializeField] PlayerAttackEventChannelSO playerAttackEventChannel;
+
+    [Header("Outbound Communication")]
+    [SerializeField] IntEventChannelSO enemyDestroyedEventChannel;
+    [SerializeField] FloatEventChannelSO enemyAttackEventChannel;
+
+    [Header("Enemy Settings")]
+    [SerializeField] LayerMask playerMask;
 
     [Header("Knockback Settings")]
     [SerializeField] bool hasKnockback;
@@ -34,42 +41,31 @@ public class EnemyController : MonoBehaviour
 
     void OnEnable()
     {
-        Helpers.SubscribeIfNotNull(enemyIdEventChannel, OnEnemyTakingDamage);
+        Helpers.SubscribeIfNotNull(playerAttackEventChannel, OnPlayerAttack);
     }
 
     void OnDisable()
     {
-        Helpers.UnsubscribeIfNotNull(enemyIdEventChannel, OnEnemyTakingDamage);
+        Helpers.UnsubscribeIfNotNull(playerAttackEventChannel, OnPlayerAttack);
     }
 
-    void OnEnemyTakingDamage(int enemyId)
+    void OnPlayerAttack(PlayerAttack attack)
     {
-        if (enemyId == GetEnemyId())
+        if (attack.EnemyId == GetEnemyId())
         {
-            Debug.Log($"I {name}:{GetEnemyId()} am taking Damage");
+            self.TakeDamage(attack.AttackDamage);
             if (!movementEngine.IsApplyingKnockBack())
-                StartCoroutine(movementEngine.StopKnockbackAfterDelay());
+                StartCoroutine(movementEngine.StopKnockbackAfterDelay(() =>
+                {
+                    if (self.IsDead())
+                    {
+                        // Add any death effects for the Enemy, the following line will destroy the enemy object
+                        Helpers.RaiseIfNotNull(enemyDestroyedEventChannel, self.EnemyId);
+                    }
+                }));
         }
     }
 
-    // private System.Collections.IEnumerator StopKnockbackAfterDelay(float duration, Vector3 impactPoint)
-    // {
-    //     applyingKnockBack = true;
-    //     yield return new WaitForSeconds(delayBeforeKnockback);
-    //     // Calculate the knockback direction (from target to impact point)
-    //     Vector3 knockbackDirection = (transform.position - impactPoint).normalized;
-
-    //     // Apply the force
-    //     if (rb != null)
-    //     {
-    //         rb.AddForce(knockbackDirection * forceMagnitude, ForceMode2D.Impulse);
-    //     }
-
-    //     yield return new WaitForSeconds(duration);
-    //     rb.linearVelocity = Vector3.zero; // Stop the target's movement
-    //     rb.angularVelocity = 0; // Stop the target's rotation
-    //     applyingKnockBack = false;
-    // }
     public int GetEnemyId()
     {
         return self.EnemyId;
@@ -79,8 +75,6 @@ public class EnemyController : MonoBehaviour
     {
         movementEngine.Update();
     }
-
-
 
     void InitializeMovementEngine()
     {
@@ -107,4 +101,12 @@ public class EnemyController : MonoBehaviour
             movementEngine.InitializeKnockBack(forceMagnitude, knockbackDuration, delayBeforeKnockback);
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        // We can consider this an attack for now, attack types will be added later
+        if (playerMask.Contains(collision.gameObject.layer))
+        {
+            Helpers.RaiseIfNotNull(enemyAttackEventChannel, self.GetAttackDamage());
+        }
+    }
 }
