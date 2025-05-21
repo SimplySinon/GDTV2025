@@ -173,18 +173,17 @@ MonoBehaviour:
   moveDirectionEventChannel: {fileID: 11400000, guid: 602ae7efaeda530488e905486db75814, type: 2}
   playerStateEventChannel: {fileID: 11400000, guid: c210aeb0242f0ca48b383ab74ec95a89, type: 2}
   playerPositionEventChannel: {fileID: 11400000, guid: 16db1e4750c08f240ae7877ae5fae8ab, type: 2}
+  playerTransformEventChannel: {fileID: 11400000, guid: 050959829b065da468bb006acd353821, type: 2}
   attackInputEventChannel: {fileID: 11400000, guid: 0c2cbcf59568ead42a25bb158ca99dd1, type: 2}
-  enemyIdEventChannel: {fileID: 11400000, guid: f0df67bd5dc6e00469630eb818b2b143, type: 2}
+  playerAttackEventChannel: {fileID: 11400000, guid: be15377837b2b3e468cd2517f3b81907, type: 2}
+  enemyAttackEventChannel: {fileID: 11400000, guid: 0493fe75ae4676e47a284f3ecccf26be, type: 2}
   speed: 5
   attackCooldown: 0.075
+  health: 100
+  meleeAttackDamage: 10
+  rangedAttackDamage: 5
   hitboxCollider: {fileID: 6892109325874380666}
   bodyCollider: {fileID: 7360895915328025469}
-  canCollideWithHitbox:
-    serializedVersion: 2
-    m_Bits: 2048
-  playerBodyCanCollideWith:
-    serializedVersion: 2
-    m_Bits: 55
   bodyColliderSize: {x: 1.5, y: 1}
   bodyColliderOffset: {x: 0, y: 0.5}
   hitboxColliderRadius: 1
@@ -373,7 +372,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

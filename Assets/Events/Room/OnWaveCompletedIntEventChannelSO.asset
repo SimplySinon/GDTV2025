@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb6dddefcc4c80942aca780227a522a5, type: 3}
-  m_Name: EnemyIdIntEventChannelSO
+  m_Name: OnWaveCompletedIntEventChannelSO
   m_EditorClassIdentifier: 

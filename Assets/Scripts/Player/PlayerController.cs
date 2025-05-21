@@ -11,11 +11,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2EventChannelSO playerPositionEventChannel;
     [SerializeField] private TransformEventChannelSO playerTransformEventChannel;
     [SerializeField] private BoolEventChannelSO attackInputEventChannel;
-    [SerializeField] private IntEventChannelSO enemyIdEventChannel;
+    [SerializeField] private PlayerAttackEventChannelSO playerAttackEventChannel;
+
+    [Header("Inbound Communication")]
+    [SerializeField] FloatEventChannelSO enemyAttackEventChannel;
+
 
     [Space, Header("Character Settings")]
     [SerializeField] private float speed = 5f;
     [SerializeField] float attackCooldown;
+
+
+    [Space, Header("Character Details")]
+    [SerializeField] float health = 100;
+    [SerializeField] float meleeAttackDamage = 10;
+    [SerializeField] float rangedAttackDamage = 5;
+
 
     [Space, Header("Character Collision Settings")]
     [SerializeField] private CircleCollider2D hitboxCollider;
@@ -71,6 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         Helpers.SubscribeIfNotNull(moveDirectionEventChannel, OnMoveDirection);
         Helpers.SubscribeIfNotNull(attackInputEventChannel, OnAttackInput);
+        Helpers.SubscribeIfNotNull(enemyAttackEventChannel, OnEnemyAttack);
     }
 
     void OnDisable()
@@ -100,6 +112,28 @@ public class PlayerController : MonoBehaviour
 
         Move();
         Helpers.RaiseIfNotNull(playerPositionEventChannel, transform.position);
+    }
+
+    private void OnEnemyAttack(float attackDamage)
+    {
+        if (currentState == State.Defending)
+        {
+            // Apply any Defence Logic here
+            // First implementation of Defence will not be directional like attack
+            return;
+        }
+
+        health = Mathf.Clamp(health - attackDamage, 0, 100);
+
+        if (health <= 0)
+        {
+            // Change Player State to Dead
+            currentState = State.Dead;
+
+            // Run any Death related logic
+
+            // Raise Player is Dead Event
+        }
     }
 
     private void OnAttackInput(bool attackInput)
@@ -179,7 +213,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log($"Attacking: {other.gameObject.name}");
             EnemyController controller = other.GetComponent<EnemyController>();
-            Helpers.RaiseIfNotNull(enemyIdEventChannel, controller.GetEnemyId());
+            Helpers.RaiseIfNotNull(playerAttackEventChannel, new(controller.GetEnemyId(), meleeAttackDamage));
         }
     }
 }

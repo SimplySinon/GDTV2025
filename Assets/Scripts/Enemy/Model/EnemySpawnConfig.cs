@@ -7,4 +7,5 @@ public class EnemySpawnConfig
     public EnemyController Enemy;
     public EnemyConfigSO Config;
     public List<Vector2> SpawnLocations;
+    public int WaveNo;
 }

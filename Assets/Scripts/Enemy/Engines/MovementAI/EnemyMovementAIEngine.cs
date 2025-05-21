@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class EnemyMovementAIEngine
 {
@@ -53,7 +54,7 @@ public abstract class EnemyMovementAIEngine
 
     public abstract void Update();
 
-    public System.Collections.IEnumerator StopKnockbackAfterDelay()
+    public System.Collections.IEnumerator StopKnockbackAfterDelay(UnityAction callback)
     {
         applyingKnockBack = true;
         yield return new WaitForSeconds(delayBeforeKnockback);
@@ -71,6 +72,7 @@ public abstract class EnemyMovementAIEngine
         rb.linearVelocity = Vector3.zero; // Stop the target's movement
         rb.angularVelocity = 0; // Stop the target's rotation
         applyingKnockBack = false;
+        callback();
     }
 
     public bool IsApplyingKnockBack() { return applyingKnockBack; }
