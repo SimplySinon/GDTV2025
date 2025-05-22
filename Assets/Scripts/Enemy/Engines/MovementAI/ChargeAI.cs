@@ -11,7 +11,7 @@ public class ChargeAI : EnemyMovementAIEngine
 
     public override void Update()
     {
-        if (applyingKnockBack) return;
+        if (applyingKnockBack || isAttacking) return;
 
         chargeTimer -= Time.deltaTime;
         if (chargeTimer >= 0)

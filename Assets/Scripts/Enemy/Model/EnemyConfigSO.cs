@@ -13,10 +13,17 @@ public class EnemyConfigSO : ScriptableObject
     public float ChargeSpeed;
     public float WanderSpeed;
     public float FollowSpeed;
+    public bool IsRanged;
+    public float AttackCooldown;
+    public float AttackDuration;
+    public float ProjectileSpeed;
+    public float ProjectileFireRate;
+    public Projectile Projectile;
     public Vector2 RelativeOffset;
     public float ChargeTime;
     public float ChargeCooldown;
     public float ProximityRange;
+    public float AttackRange;
     public float BufferMinDistance = 1.5f;
     public float BufferMaxDistance = 3f;
 
@@ -47,7 +54,14 @@ public class EnemyConfigSOEditor : Editor
     SerializedProperty proximityRange;
     SerializedProperty bufferMinDistance;
     SerializedProperty bufferMaxDistance;
-    SerializedProperty valueDiviation;
+    [Range(0, 3)] SerializedProperty valueDiviation;
+    SerializedProperty attackRange;
+    SerializedProperty isRanged;
+    SerializedProperty projectile;
+    SerializedProperty attackCooldown;
+    SerializedProperty projectileSpeed;
+    SerializedProperty attackDuration;
+    [Range(0, 4f)] SerializedProperty projectileFireRate;
 
     void OnEnable()
     {
@@ -67,6 +81,13 @@ public class EnemyConfigSOEditor : Editor
         bufferMaxDistance = serializedObject.FindProperty("BufferMaxDistance");
         movementAIType = serializedObject.FindProperty("MovementAIType");
         valueDiviation = serializedObject.FindProperty("ValueDiviation");
+        attackRange = serializedObject.FindProperty("AttackRange");
+        isRanged = serializedObject.FindProperty("IsRanged");
+        projectile = serializedObject.FindProperty("Projectile");
+        attackCooldown = serializedObject.FindProperty("AttackCooldown");
+        projectileSpeed = serializedObject.FindProperty("ProjectileSpeed");
+        attackDuration = serializedObject.FindProperty("AttackDuration");
+        projectileFireRate = serializedObject.FindProperty("ProjectileFireRate");
     }
 
     public override void OnInspectorGUI()
@@ -78,12 +99,26 @@ public class EnemyConfigSOEditor : Editor
         EditorGUILayout.PropertyField(maxDamage);
         EditorGUILayout.PropertyField(minDamage);
         EditorGUILayout.PropertyField(valueDiviation);
-        EditorGUILayout.Space(1);
-        EditorGUILayout.PropertyField(movementAIType);
+        EditorGUILayout.PropertyField(attackCooldown);
+        EditorGUILayout.PropertyField(attackDuration);
+        EditorGUILayout.Space(5);
+
+        EditorGUILayout.Space(5);
+        EditorGUILayout.LabelField("Range Settings", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(isRanged);
+        bool isRangedValue = isRanged.boolValue;
+
+        if (isRangedValue)
+        {
+            EditorGUILayout.PropertyField(projectile);
+            EditorGUILayout.PropertyField(attackRange);
+            EditorGUILayout.PropertyField(projectileSpeed);
+            EditorGUILayout.PropertyField(projectileFireRate);
+        }
 
         EditorGUILayout.Space(5);
         EditorGUILayout.LabelField("Movement Settings", EditorStyles.boldLabel);
-
+        EditorGUILayout.PropertyField(movementAIType);
         EnemyMovementAIType aiType = (EnemyMovementAIType)movementAIType.enumValueIndex;
 
         switch (aiType)
@@ -115,6 +150,7 @@ public class EnemyConfigSOEditor : Editor
                 EditorGUILayout.PropertyField(moveSpeed);
                 break;
         }
+
 
         serializedObject.ApplyModifiedProperties();
     }

@@ -211,7 +211,6 @@ public class PlayerController : MonoBehaviour
     {
         if (attackable.Contains(other.gameObject.layer))
         {
-            Debug.Log($"Attacking: {other.gameObject.name}");
             EnemyController controller = other.GetComponent<EnemyController>();
             Helpers.RaiseIfNotNull(playerAttackEventChannel, new(controller.GetEnemyId(), meleeAttackDamage));
         }

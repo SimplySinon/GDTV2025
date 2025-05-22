@@ -15,6 +15,7 @@ public abstract class EnemyMovementAIEngine
     float knockbackDuration;
     float delayBeforeKnockback;
     protected bool applyingKnockBack;
+    protected bool isAttacking;
     protected Vector2 targetPosition;
 
     public EnemyMovementAIEngine(Rigidbody2D rb2D, GameObject go, Transform t, Collider2D bounds, EnemyConfigSO c)
@@ -80,5 +81,15 @@ public abstract class EnemyMovementAIEngine
     protected float ApplyValueDeviation(float value)
     {
         return value + Random.Range(-config.ValueDiviation, config.ValueDiviation);
+    }
+
+    public void SetIsAttacking(bool attacking)
+    {
+        isAttacking = attacking;
+    }
+
+    public bool GetIsAttacking()
+    {
+        return isAttacking;
     }
 }
