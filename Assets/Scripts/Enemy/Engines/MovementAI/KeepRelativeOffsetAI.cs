@@ -13,7 +13,7 @@ public class KeepRelativeOffsetAI : EnemyMovementAIEngine
 
     public override void Update()
     {
-        if (applyingKnockBack) return;
+        if (applyingKnockBack || isAttacking) return;
 
         randomizerTimer -= Time.deltaTime;
         if (randomizerTimer <= 0)

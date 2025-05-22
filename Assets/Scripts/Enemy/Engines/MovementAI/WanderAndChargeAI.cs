@@ -12,7 +12,7 @@ public class WanderAndChargeAI : EnemyMovementAIEngine
 
     public override void Update()
     {
-        if (applyingKnockBack) return;
+        if (applyingKnockBack || isAttacking) return;
 
         float distance = Vector2.Distance(gameObject.transform.position, target.position);
 

@@ -15,6 +15,7 @@ public abstract class EnemyMovementAIEngine
     float knockbackDuration;
     float delayBeforeKnockback;
     protected bool applyingKnockBack;
+    protected bool isAttacking;
     protected Vector2 targetPosition;
 
     public EnemyMovementAIEngine(Rigidbody2D rb2D, GameObject go, Transform t, Collider2D bounds, EnemyConfigSO c)
@@ -43,13 +44,70 @@ public abstract class EnemyMovementAIEngine
         return movementBounds.OverlapPoint(position);
     }
 
+
     protected Vector2 ClampToBounds(Vector2 position)
+    {
+        if (movementBounds is PolygonCollider2D)
+        {
+            return ClampToPolygon(position);
+        }
+
+        return ClampToBoxCollider(position);
+    }
+    protected Vector2 ClampToBoxCollider(Vector2 position)
     {
         Bounds bounds = movementBounds.bounds;
         return new Vector2(
             Mathf.Clamp(position.x, bounds.min.x, bounds.max.x),
             Mathf.Clamp(position.y, bounds.min.y, bounds.max.y)
         );
+    }
+
+
+    protected Vector2 ClampToPolygon(Vector2 position)
+    {
+        PolygonCollider2D polygonCollider = (PolygonCollider2D)movementBounds;
+
+        if (polygonCollider.OverlapPoint(position))
+        {
+            // Point is inside polygon, return as-is
+            return position;
+        }
+
+        // Point is outside, find the closest point on the polygon's edges
+        Vector2 closestPoint = position;
+        float minDistance = float.MaxValue;
+
+        for (int p = 0; p < polygonCollider.pathCount; p++)
+        {
+            Vector2[] points = polygonCollider.GetPath(p);
+            int count = points.Length;
+
+            for (int i = 0; i < count; i++)
+            {
+                Vector2 a = polygonCollider.transform.TransformPoint(points[i]);
+                Vector2 b = polygonCollider.transform.TransformPoint(points[(i + 1) % count]);
+
+                Vector2 closest = ClosestPointOnSegment(position, a, b);
+                float distance = Vector2.SqrMagnitude(position - closest);
+
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    closestPoint = closest;
+                }
+            }
+        }
+
+        return closestPoint;
+    }
+
+    private Vector2 ClosestPointOnSegment(Vector2 p, Vector2 a, Vector2 b)
+    {
+        Vector2 ab = b - a;
+        float t = Vector2.Dot(p - a, ab) / ab.sqrMagnitude;
+        t = Mathf.Clamp01(t);
+        return a + t * ab;
     }
 
     public abstract void Update();
@@ -80,5 +138,15 @@ public abstract class EnemyMovementAIEngine
     protected float ApplyValueDeviation(float value)
     {
         return value + Random.Range(-config.ValueDiviation, config.ValueDiviation);
+    }
+
+    public void SetIsAttacking(bool attacking)
+    {
+        isAttacking = attacking;
+    }
+
+    public bool GetIsAttacking()
+    {
+        return isAttacking;
     }
 }

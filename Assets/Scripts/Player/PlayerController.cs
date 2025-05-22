@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,26 +7,32 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Outbound Communication")]
-    [SerializeField] private Vector2EventChannelSO moveDirectionEventChannel;
     [SerializeField] private CharacterStateEventChannelSO playerStateEventChannel;
     [SerializeField] private Vector2EventChannelSO playerPositionEventChannel;
     [SerializeField] private TransformEventChannelSO playerTransformEventChannel;
-    [SerializeField] private BoolEventChannelSO attackInputEventChannel;
     [SerializeField] private PlayerAttackEventChannelSO playerAttackEventChannel;
 
     [Header("Inbound Communication")]
-    [SerializeField] FloatEventChannelSO enemyAttackEventChannel;
+    [SerializeField] private Vector2EventChannelSO moveDirectionEventChannel;
+    [SerializeField] private BoolEventChannelSO attackInputEventChannel;
+    [SerializeField] private BoolEventChannelSO defenseInputEventChannelSO;
+    [SerializeField] private BoolEventChannelSO rangedAttackInputEventChannelSO;
+    [SerializeField] private FloatEventChannelSO enemyAttackEventChannel;
+    [SerializeField] private RoomConfigEventChannelSO roomConfigEventChannel;
 
 
     [Space, Header("Character Settings")]
     [SerializeField] private float speed = 5f;
-    [SerializeField] float attackCooldown;
+    [SerializeField] float cooldown;
 
 
     [Space, Header("Character Details")]
     [SerializeField] float health = 100;
     [SerializeField] float meleeAttackDamage = 10;
     [SerializeField] float rangedAttackDamage = 5;
+    [SerializeField] private Projectile playerRangedProjectile;
+    [SerializeField] float projectileFireRate;
+    [SerializeField] float projectileSpeed;
 
 
     [Space, Header("Character Collision Settings")]
@@ -40,17 +47,26 @@ public class PlayerController : MonoBehaviour
     [Space, Header("Attack Collider Settings")]
     [SerializeField] private LayerMask attackable;
     [SerializeField] private BoxCollider2D attackCollider;
+    [SerializeField] private BoxCollider2D defendCollider;
     [SerializeField] private Vector2 downAttackPosition;
     [SerializeField] private Vector2 upAttackPosition;
     [SerializeField] private Vector2 leftAttackPosition;
     [SerializeField] private Vector2 rightAttackPosition;
 
-    private float attackTimer;
+    private float timer;
     private Vector2 moveInput;
     private Rigidbody2D rb;
 
     private State currentState;
-    private bool isAttackingInput = false;
+    private bool isAttackInput = false;
+    private bool isDefendingInput = false;
+    private bool isRangedAttackInput = false;
+    private List<State> activeActions;
+
+
+    float nextRangedProjectile;
+    RoomConfig currentRoom;
+    Vector2 previousMoveInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -76,13 +92,24 @@ public class PlayerController : MonoBehaviour
         // Remove Gravity Effects
         rb.gravityScale = 0;
         Helpers.RaiseIfNotNull(playerTransformEventChannel, transform);
+
+        activeActions = new List<State>()
+        {
+            State.Attacking,
+            State.Defending,
+        };
+
+        nextRangedProjectile = Time.time;
     }
 
     void OnEnable()
     {
         Helpers.SubscribeIfNotNull(moveDirectionEventChannel, OnMoveDirection);
         Helpers.SubscribeIfNotNull(attackInputEventChannel, OnAttackInput);
+        Helpers.SubscribeIfNotNull(defenseInputEventChannelSO, OnDefenseInput);
+        Helpers.SubscribeIfNotNull(rangedAttackInputEventChannelSO, OnRangedAttackInput);
         Helpers.SubscribeIfNotNull(enemyAttackEventChannel, OnEnemyAttack);
+        Helpers.SubscribeIfNotNull(roomConfigEventChannel, OnPlayerEnterRoom);
     }
 
     void OnDisable()
@@ -93,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        attackTimer -= Time.deltaTime;
+        timer -= Time.deltaTime;
     }
 
     // Update is called once per frame
@@ -101,8 +128,10 @@ public class PlayerController : MonoBehaviour
     {
         if (currentState == State.Attacking)
         {
+            // TODO: Confirm if Attack should be in place, if move attack is allowed remove bottom line
             rb.linearVelocity = Vector2.zero;
             attackCollider.enabled = true;
+            defendCollider.enabled = false;
             return;
         }
         else
@@ -110,16 +139,35 @@ public class PlayerController : MonoBehaviour
             attackCollider.enabled = false;
         }
 
+
+        if (currentState == State.Defending)
+        {
+            // TODO: Confirm if Defend should be in place, if move defense is allowed remove bottom line
+            rb.linearVelocity = Vector2.zero;
+            defendCollider.enabled = true;
+            attackCollider.enabled = false;
+            return;
+        }
+        else
+        {
+            defendCollider.enabled = false;
+        }
+
+
+
         Move();
         Helpers.RaiseIfNotNull(playerPositionEventChannel, transform.position);
+    }
+
+    private void OnPlayerEnterRoom(RoomConfig roomConfig)
+    {
+        currentRoom = roomConfig;
     }
 
     private void OnEnemyAttack(float attackDamage)
     {
         if (currentState == State.Defending)
         {
-            // Apply any Defence Logic here
-            // First implementation of Defence will not be directional like attack
             return;
         }
 
@@ -129,35 +177,60 @@ public class PlayerController : MonoBehaviour
         {
             // Change Player State to Dead
             currentState = State.Dead;
-
             // Run any Death related logic
-
-            // Raise Player is Dead Event
+            Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
         }
     }
 
     private void OnAttackInput(bool attackInput)
     {
-        isAttackingInput = attackInput;
+        isAttackInput = attackInput;
+        RaiseEvents();
+    }
+
+    private void OnDefenseInput(bool defenseInput)
+    {
+        isDefendingInput = defenseInput;
+        RaiseEvents();
+    }
+
+    private void OnRangedAttackInput(bool rangedAttackInput)
+    {
+        isRangedAttackInput = rangedAttackInput;
         RaiseEvents();
     }
 
     private void OnMoveDirection(Vector2 moveDirection)
     {
+        if (moveInput != Vector2.zero) previousMoveInput = moveInput;
         moveInput = moveDirection;
-        RepositionAttackCollider();
+
+        RepositionColliders();
         RaiseEvents();
     }
 
     private void RaiseEvents()
     {
-        if (isAttackingInput && attackTimer <= 0)
+        RaiseEventOnce(State.Idle);
+
+        // Priority: Defense is always highest priority
+        if (isAttackInput && timer <= 0) currentState = State.Attacking;
+        if (isRangedAttackInput && timer <= 0) currentState = State.RangedAttack;
+        if (isDefendingInput && timer <= 0) currentState = State.Defending;
+
+        if (currentState == State.RangedAttack && timer <= 0)
         {
-            Helpers.RaiseIfNotNull(playerStateEventChannel, new(State.Attacking));
-            currentState = State.Attacking;
-            attackTimer = attackCooldown;
+            AttackFromRange();
             return;
         }
+
+        if (activeActions.Contains(currentState) && timer <= 0)
+        {
+            Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
+            timer = cooldown;
+            return;
+        }
+
 
         if (moveInput.magnitude > 0.1f || moveInput.magnitude < -0.1f)
         {
@@ -166,7 +239,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (!isAttackingInput)
+        if (!isAttackInput && !isDefendingInput && !isRangedAttackInput)
             RaiseEventOnce(State.Idle);
     }
 
@@ -184,7 +257,7 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = moveInput * speed;
     }
 
-    private void RepositionAttackCollider()
+    private void RepositionColliders()
     {
         float x = moveInput.x;
         float y = moveInput.y;
@@ -192,28 +265,62 @@ public class PlayerController : MonoBehaviour
         if (y < 0)
         {
             attackCollider.transform.localPosition = downAttackPosition;
+            defendCollider.transform.localPosition = downAttackPosition;
         }
         else if (y > 0)
         {
             attackCollider.transform.localPosition = upAttackPosition;
+            defendCollider.transform.localPosition = upAttackPosition;
         }
         else if (y == 0 && x < 0)
         {
             attackCollider.transform.localPosition = leftAttackPosition;
+            defendCollider.transform.localPosition = leftAttackPosition;
         }
         else if (y == 0 && x > 0)
         {
             attackCollider.transform.localPosition = rightAttackPosition;
+            defendCollider.transform.localPosition = rightAttackPosition;
         }
+    }
+
+    void AttackFromRange()
+    {
+        if (nextRangedProjectile <= Time.time)
+        {
+            Projectile projectile = Instantiate(playerRangedProjectile, attackCollider.transform.position, attackCollider.transform.rotation);
+            projectile.transform.parent = null;
+            float speed = projectileSpeed;
+            Helpers.RaiseIfNotNull(playerStateEventChannel, new(State.RangedAttack));
+            Vector2 dir = previousMoveInput;
+            projectile.Initialize(speed, dir, attackable, currentRoom.RoomBounds, RangedDamageEnemy);
+            nextRangedProjectile = Time.time + projectileFireRate;
+        }
+    }
+
+    void RangedDamageEnemy(GameObject enemy)
+    {
+        EnemyController controller = enemy.GetComponent<EnemyController>();
+        Helpers.RaiseIfNotNull(playerAttackEventChannel, new(controller.GetEnemyId(), rangedAttackDamage, true));
+    }
+
+    void MeleeDamageEnemy(GameObject enemy)
+    {
+        EnemyController controller = enemy.GetComponent<EnemyController>();
+        Helpers.RaiseIfNotNull(playerAttackEventChannel, new(controller.GetEnemyId(), meleeAttackDamage));
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (attackable.Contains(other.gameObject.layer))
+        if (attackable.Contains(other.gameObject.layer) && currentState == State.Attacking)
         {
-            Debug.Log($"Attacking: {other.gameObject.name}");
-            EnemyController controller = other.GetComponent<EnemyController>();
-            Helpers.RaiseIfNotNull(playerAttackEventChannel, new(controller.GetEnemyId(), meleeAttackDamage));
+            MeleeDamageEnemy(other.gameObject);
+        }
+        else
+        {
+            // TODO: Add Shield Sounds and Effects
+            // If Spawning effects take the position of the defendCollider to spawn your VFX
+            Debug.Log($"Is Defending: {other.gameObject.name}");
         }
     }
 }

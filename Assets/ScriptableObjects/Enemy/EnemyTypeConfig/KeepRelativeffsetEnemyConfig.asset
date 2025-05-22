@@ -17,14 +17,20 @@ MonoBehaviour:
   ChargeSpeed: 8
   WanderSpeed: 3
   FollowSpeed: 8
+  IsRanged: 0
+  AttackCooldown: 3
+  AttackDuration: 2
+  ProjectileSpeed: 0
+  Projectile: {fileID: 0}
   RelativeOffset: {x: 3, y: 3}
   ChargeTime: 6
   ChargeCooldown: 3
   ProximityRange: 5
+  AttackRange: 0
   BufferMinDistance: 5
   BufferMaxDistance: 8
-  MaxHealth: 0
-  MaxDamage: 0
-  MinDamage: 0
+  MaxHealth: 50
+  MaxDamage: 5
+  MinDamage: 2
   ValueDiviation: 2
   MovementAIType: 2

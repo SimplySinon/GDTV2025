@@ -22,7 +22,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField] List<EnemySpawnConfig> enemySpawnConfigs;
     private int currentWave;
     private RoomConfig config;
-    private bool roomEnemiesDefeated;
+    public bool roomEnemiesDefeated;
 
     void Start()
     {
@@ -34,6 +34,7 @@ public class RoomManager : MonoBehaviour
         {
             throw new UnityException("Room Bounds Collider not found on room object");
         }
+        config.RoomBounds.isTrigger = true;
 
         currentWave = -1;
     }
@@ -72,12 +73,11 @@ public class RoomManager : MonoBehaviour
     private void SpawnNextWave()
     {
         currentWave += 1;
+        Helpers.RaiseIfNotNull(roomConfigEventChannel, config);
         List<EnemySpawnConfig> nextWave = enemySpawnConfigs.FindAll(e => e.WaveNo == currentWave);
 
-        Debug.Log($"Count: {nextWave.Count}");
         if (nextWave.Count > 0)
         {
-            Helpers.RaiseIfNotNull(roomConfigEventChannel, config);
             Helpers.RaiseIfNotNull(spawnEnemiesEventChannel, nextWave);
         }
         else

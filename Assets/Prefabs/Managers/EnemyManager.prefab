@@ -44,11 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66e6c3396184714da589f401c79166d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useTestingConfigs: 1
-  testingSpawnConfigs:
-  - Enemy: {fileID: 3789681118913933443, guid: af09cbc6144ccf448b6110073ed3443d, type: 3}
-    Config: {fileID: 11400000, guid: 4520a409cd2a2334d8108e82a31ab0be, type: 2}
-    SpawnLocations:
-    - {x: -10, y: 0}
-    - {x: -10, y: 2}
-    - {x: 10, y: 2}
+  spawnEnemiesEventChannel: {fileID: 11400000, guid: ab9dc3d805ffd084a93fbcfb79984ebf, type: 2}
+  currentRoomEventChannel: {fileID: 11400000, guid: b4bf930b436d8bd4f86950eb95a97250, type: 2}
+  enemyDestroyedEventChannel: {fileID: 11400000, guid: 84674f87aa6b9b84591a995b70499809, type: 2}
+  playerTransformEventChannel: {fileID: 11400000, guid: 050959829b065da468bb006acd353821, type: 2}
+  waveCompletedEventChannel: {fileID: 11400000, guid: c83bcb7debbe3254986dcb9b6c24f73e, type: 2}
+  useTestingConfigs: 0
+  testingPlayer: {fileID: 0}
+  testingBounds: {fileID: 0}
+  testingSpawnConfigs: []

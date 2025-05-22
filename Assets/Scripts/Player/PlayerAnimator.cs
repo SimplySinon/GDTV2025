@@ -13,9 +13,18 @@ public class PlayerAnimator : MonoBehaviour
     private State playerState;
     private Vector2 moveInput;
 
+    bool hasIsMoving, hasIsTakingDamage, hasIsDead, hasIsAttacking, hasIsRangedAttack, hasIsDefending;
+
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        hasIsMoving = animator.ContainsParam("isMoving");
+        hasIsTakingDamage = animator.ContainsParam("isTakingDamage");
+        hasIsDead = animator.ContainsParam("isDead");
+        hasIsAttacking = animator.ContainsParam("isAttacking");
+        hasIsRangedAttack = animator.ContainsParam("isRangedAttack");
+        hasIsDefending = animator.ContainsParam("isDefending");
     }
 
     void OnEnable()
@@ -48,8 +57,12 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Animate()
     {
-        animator.SetBool("isMoving", playerState == State.Moving);
-        animator.SetBool("isAttacking", playerState == State.Attacking);
+        if (hasIsMoving) animator.SetBool("isMoving", playerState == State.Moving);
+        if (hasIsTakingDamage) animator.SetBool("isTakingDamage", playerState == State.TakingDamage);
+        if (hasIsAttacking) animator.SetBool("isAttacking", playerState == State.Attacking);
+        if (hasIsDefending) animator.SetBool("isDefending", playerState == State.Defending);
+        if (hasIsRangedAttack) animator.SetBool("isRangeAttack", playerState == State.RangedAttack);
+        if (hasIsDead) animator.SetBool("isDead", playerState == State.Dead);
 
         animator.SetFloat("x", moveInput.x);
         animator.SetFloat("y", moveInput.y);

@@ -15,11 +15,11 @@ TagManager:
   - Player
   - PlayerAttack
   - PlayerHitBox
-  - 
+  - PlayerDefense
   - Enemy
   - EnemyAttack
   - 
-  - 
+  - Projectile
   - 
   - 
   - 

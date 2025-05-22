@@ -23,7 +23,7 @@ public class RandomPatrolAI : EnemyMovementAIEngine
 
     public override void Update()
     {
-        if (applyingKnockBack) return;
+        if (applyingKnockBack || isAttacking) return;
 
         Vector2 currentPosition = gameObject.transform.position;
         randomTimer -= Time.deltaTime;

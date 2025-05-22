@@ -9,5 +9,6 @@ public enum State
     Pulling,
     Spell,
     Defending,
-    Dead
+    Dead,
+    RangedAttack
 }
