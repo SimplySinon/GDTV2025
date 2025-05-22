@@ -34,6 +34,7 @@ public class RoomManager : MonoBehaviour
         {
             throw new UnityException("Room Bounds Collider not found on room object");
         }
+        config.RoomBounds.isTrigger = true;
 
         currentWave = -1;
     }
