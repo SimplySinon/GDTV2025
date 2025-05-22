@@ -54,14 +54,14 @@ public class EnemyConfigSOEditor : Editor
     SerializedProperty proximityRange;
     SerializedProperty bufferMinDistance;
     SerializedProperty bufferMaxDistance;
-    [Range(0, 3)] SerializedProperty valueDiviation;
+    SerializedProperty valueDiviation;
     SerializedProperty attackRange;
     SerializedProperty isRanged;
     SerializedProperty projectile;
     SerializedProperty attackCooldown;
     SerializedProperty projectileSpeed;
     SerializedProperty attackDuration;
-    [Range(0, 4f)] SerializedProperty projectileFireRate;
+    SerializedProperty projectileFireRate;
 
     void OnEnable()
     {
