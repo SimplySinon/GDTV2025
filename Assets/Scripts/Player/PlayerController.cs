@@ -128,8 +128,10 @@ public class PlayerController : MonoBehaviour
     {
         if (currentState == State.Attacking)
         {
+            // TODO: Confirm if Attack should be in place, if move attack is allowed remove bottom line
             rb.linearVelocity = Vector2.zero;
             attackCollider.enabled = true;
+            defendCollider.enabled = false;
             return;
         }
         else
@@ -140,13 +142,15 @@ public class PlayerController : MonoBehaviour
 
         if (currentState == State.Defending)
         {
+            // TODO: Confirm if Defend should be in place, if move defense is allowed remove bottom line
             rb.linearVelocity = Vector2.zero;
-            hitboxCollider.enabled = false;
+            defendCollider.enabled = true;
+            attackCollider.enabled = false;
             return;
         }
         else
         {
-            hitboxCollider.enabled = true;
+            defendCollider.enabled = false;
         }
 
 
@@ -284,7 +288,6 @@ public class PlayerController : MonoBehaviour
     {
         if (nextRangedProjectile <= Time.time)
         {
-            Debug.Log("Player Spawning Projectile");
             Projectile projectile = Instantiate(playerRangedProjectile, attackCollider.transform.position, attackCollider.transform.rotation);
             projectile.transform.parent = null;
             float speed = projectileSpeed;
@@ -309,9 +312,14 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (attackable.Contains(other.gameObject.layer))
+        if (attackable.Contains(other.gameObject.layer) && currentState == State.Attacking)
         {
             MeleeDamageEnemy(other.gameObject);
+        }
+        else
+        {
+            // TODO: Add Shield Sounds and Effects
+            Debug.Log($"Is Defending: {other.gameObject.name}");
         }
     }
 }
