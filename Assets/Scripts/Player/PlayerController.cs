@@ -319,6 +319,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             // TODO: Add Shield Sounds and Effects
+            // If Spawning effects take the position of the defendCollider to spawn your VFX
             Debug.Log($"Is Defending: {other.gameObject.name}");
         }
     }
