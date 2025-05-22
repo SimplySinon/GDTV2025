@@ -11,10 +11,9 @@ ScriptedImporter:
   importerVersion: 33
   pixelsPerUnit: 8
   edgesPerEllipse: 32
-  numberOfObjectsImported: 387
+  numberOfObjectsImported: 99
   tilesAsObjects: 0
   sortingMode: 0
   isIsometric: 0
   customImporterClassName: 
-  internalTilesets:
-  - {instanceID: 0}
+  internalTilesets: []
