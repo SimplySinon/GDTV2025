@@ -6,7 +6,8 @@ public class Projectile : MonoBehaviour
 {
     float speed;
     Vector2 projectileDirection;
-    UnityAction onHitCallback;
+    UnityAction<GameObject> onHitCallbackWithParam;
+    UnityAction onHitCallbackNoParam;
     LayerMask targetMask;
     Collider2D projectileBounds;
     Collider2D projectileCollider;
@@ -14,11 +15,23 @@ public class Projectile : MonoBehaviour
     Vector2 velocity;
     Vector2 acceleration = new Vector2(0, 0); // Acceleration (e.g. gravity)
 
-    public void Initialize(float projectileSpeed, Vector2 direction, LayerMask target, Collider2D bounds, UnityAction onHit)
+    public void Initialize(float projectileSpeed, Vector2 direction, LayerMask target, Collider2D bounds, UnityAction<GameObject> onHitWithParam)
     {
         speed = projectileSpeed;
         projectileDirection = direction.normalized;
-        onHitCallback = onHit;
+        onHitCallbackWithParam = onHitWithParam;
+        targetMask = target;
+
+        projectileBounds = bounds;
+        projectileCollider = GetComponent<Collider2D>();
+        projectileCollider.includeLayers = target;
+    }
+
+    public void Initialize(float projectileSpeed, Vector2 direction, LayerMask target, Collider2D bounds, UnityAction onHitNoParam)
+    {
+        speed = projectileSpeed;
+        projectileDirection = direction.normalized;
+        onHitCallbackNoParam = onHitNoParam;
         targetMask = target;
 
         projectileBounds = bounds;
@@ -59,7 +72,14 @@ public class Projectile : MonoBehaviour
     {
         if (targetMask.Contains(other.gameObject.layer))
         {
-            onHitCallback();
+            if (onHitCallbackWithParam != null)
+            {
+                onHitCallbackWithParam(other.gameObject);
+            }
+            else
+            {
+                onHitCallbackNoParam();
+            }
             Destroy(gameObject);
         }
     }

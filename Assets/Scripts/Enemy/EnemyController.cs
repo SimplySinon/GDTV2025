@@ -79,7 +79,11 @@ public class EnemyController : MonoBehaviour
         if (attack.EnemyId == GetEnemyId())
         {
             self.TakeDamage(attack.AttackDamage);
-            ApplyKnockBack();
+
+            if (!attack.IsRanged)
+                ApplyKnockBack();
+            else
+                CheckIfIAmDead();
         }
     }
 

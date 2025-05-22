@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDirectionEventChannelSO: {fileID: 11400000, guid: 602ae7efaeda530488e905486db75814, type: 2}
   attackInputEventChannelSO: {fileID: 11400000, guid: 0c2cbcf59568ead42a25bb158ca99dd1, type: 2}
+  defenseInputEventChannelSO: {fileID: 11400000, guid: 3d430f19398c4864ea87092a30881e96, type: 2}
+  rangedAttackInputEventChannelSO: {fileID: 11400000, guid: ada5405f32b3d824996d4be7c4333547, type: 2}
