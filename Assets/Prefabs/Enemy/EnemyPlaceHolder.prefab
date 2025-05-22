@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 3517490410361807682, guid: c2922fb63c595954b81a802da48f58cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   upAttackPosition: {x: 0, y: 2}
   leftAttackPosition: {x: -1, y: 1}
   rightAttackPosition: {x: 1, y: 1}
-  hasKnockback: 1
+  hasKnockback: 0
   forceMagnitude: 10
   knockbackDuration: 0.15
   delayBeforeKnockback: 0.05

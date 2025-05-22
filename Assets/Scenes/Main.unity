@@ -1837,6 +1837,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7513231162842184053, guid: 58623ca92c9b7e24eace8e078934c585, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: -7118181429892417582, guid: 58623ca92c9b7e24eace8e078934c585, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7
@@ -1944,6 +1948,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5031955787895697264, guid: e99c3d7afdd95f147808b04fc676dde9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5536923930328869688, guid: e99c3d7afdd95f147808b04fc676dde9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5536923930328869688, guid: e99c3d7afdd95f147808b04fc676dde9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5536923930328869688, guid: e99c3d7afdd95f147808b04fc676dde9, type: 3}
+      propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7940692995712416266, guid: e99c3d7afdd95f147808b04fc676dde9, type: 3}
