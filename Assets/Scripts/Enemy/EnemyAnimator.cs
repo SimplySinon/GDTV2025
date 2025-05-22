@@ -27,7 +27,7 @@ public class EnemyAnimator : MonoBehaviour
 
     public void ChangeEnemyMoveDirection(Vector2 dir)
     {
-        moveDirection = dir;
+        moveDirection = dir.normalized;
         Animate();
     }
 

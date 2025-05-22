@@ -19,9 +19,9 @@ MonoBehaviour:
   FollowSpeed: 8
   IsRanged: 1
   AttackCooldown: 3
-  AttackDuration: 2
+  AttackDuration: 0.25
   ProjectileSpeed: 6
-  ProjectileFireRate: 2
+  ProjectileFireRate: 0.25
   Projectile: {fileID: 3439508993009642488, guid: ae994680d3f1d0c4092170a0af1731a7, type: 3}
   RelativeOffset: {x: 3, y: 3}
   ChargeTime: 6

@@ -102,12 +102,15 @@ public class EnemyController : MonoBehaviour
         movementEngine.Update();
 
         float distanceFromPreviousPos = Vector2.Distance(previousPosition, transform.position);
-        if (distanceFromPreviousPos > changeDirectionThreshold && !movementEngine.IsApplyingKnockBack())
+        if (distanceFromPreviousPos > changeDirectionThreshold &&
+            !movementEngine.IsApplyingKnockBack() &&
+            currentState != State.Attacking)
         {
             Vector2 dir = (Vector2)transform.position - previousPosition;
             RepositionAttackCollider(dir);
             enemyAnimator.ChangeEnemyMoveDirection(dir);
             previousPosition = (Vector2)transform.position;
+
         }
 
         // Attack Related Logic

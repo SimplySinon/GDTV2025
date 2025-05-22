@@ -34,5 +34,6 @@ public class ChargeAI : EnemyMovementAIEngine
         {
             chargeTimer = ApplyValueDeviation(config.ChargeTime);
         }
+        rb.MovePosition(ClampToBounds(gameObject.transform.position));
     }
 }
