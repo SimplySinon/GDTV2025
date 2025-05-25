@@ -7391,10 +7391,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1101702945}
   - component: {fileID: 1101702947}
-  - component: {fileID: 1101702946}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7414,18 +7413,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1493518557}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1101702946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101702944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19587a10fb9bdca4c9daa9e2447ecbca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1101702947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11194,11 +11181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: orthographic size
-      value: 7.5000005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: -0.09375001
+      value: -0.78125
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -11206,11 +11193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.5208334
+      value: 1.5625
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.44444445
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9171703212939876507, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_LocalPosition.z
