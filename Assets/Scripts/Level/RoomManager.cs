@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-
     [Header("Inbound Communication")]
     [SerializeField] IntEventChannelSO onWaveCompletedEventChannel;
 
@@ -22,7 +21,17 @@ public class RoomManager : MonoBehaviour
     [SerializeField] List<EnemySpawnConfig> enemySpawnConfigs;
     private int currentWave;
     private RoomConfig config;
-    public bool roomEnemiesDefeated;
+    public bool roomEnemiesDefeated = false;
+
+    private bool waveSpawned = false;
+
+    public Transform enemiesContainer;
+    public AudioSource ambientMusic;
+    public AudioSource battleMusic;
+
+    private bool playerInside = false;
+    private bool battleMusicPlaying = false;
+
 
     void Start()
     {
@@ -44,6 +53,14 @@ public class RoomManager : MonoBehaviour
         Helpers.SubscribeIfNotNull(onWaveCompletedEventChannel, OnWaveCompleted);
     }
 
+    void Update()
+    {
+        
+        
+            CheckIfEnemiesDefeated();
+        
+    }
+
     void OnWaveCompleted(int id)
     {
         if (config.RoomId == id)
@@ -56,9 +73,10 @@ public class RoomManager : MonoBehaviour
     {
         if (playerLayer.Contains(other.gameObject.layer))
         {
-            Debug.Log("Player Has entered");
+            
             OnRoomTriggerEnter();
             SpawnNextWave();
+            InvokeRepeating("CheckEnemies", 1f, 1f);
         }
     }
 
@@ -68,6 +86,7 @@ public class RoomManager : MonoBehaviour
             cameraConfig.CameraPosition = transform.position;
 
         Helpers.RaiseIfNotNull(cameraConfigEventChannel, cameraConfig);
+        InvokeRepeating("CheckEnemies", 1f, 1f);
     }
 
     private void SpawnNextWave()
@@ -78,11 +97,61 @@ public class RoomManager : MonoBehaviour
 
         if (nextWave.Count > 0)
         {
+            waveSpawned = true;
+            roomEnemiesDefeated = false;
             Helpers.RaiseIfNotNull(spawnEnemiesEventChannel, nextWave);
         }
         else
         {
             roomEnemiesDefeated = true;
+        }
+    }
+
+    private void CheckIfEnemiesDefeated()
+    {
+        if (!waveSpawned || roomEnemiesDefeated) return;
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        int enemiesInRoom = 0;
+        foreach (GameObject enemy in enemies)
+        {
+            if (config.RoomBounds.bounds.Contains(enemy.transform.position))
+                enemiesInRoom++;
+        }
+
+        if (enemiesInRoom == 0)
+        {
+            roomEnemiesDefeated = true;
+            waveSpawned = false;
+            Debug.Log("All enemies defeated in room: " + config.RoomId);
+         
+        }
+    }
+
+    void CheckEnemies()
+    {
+        int aliveCount = 0;
+
+        foreach (Transform enemy in enemiesContainer)
+        {
+            if (enemy != null && enemy.gameObject.activeInHierarchy)
+            {
+                aliveCount++;
+            }
+        }
+
+        if (aliveCount > 0 && !battleMusicPlaying)
+        {
+            ambientMusic.Stop();
+            battleMusic.Play();
+            battleMusicPlaying = true;
+        }
+        else if (aliveCount == 0 && battleMusicPlaying)
+        {
+            battleMusic.Stop();
+            ambientMusic.Play();
+            battleMusicPlaying = false;
         }
     }
 }

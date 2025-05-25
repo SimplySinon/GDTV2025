@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: dfa0c5a06cb6a6c46adaba6f079b8a5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5022269635708331254
+    second: WornWalk_0
+  - first:
+      213: 1397093950774267682
+    second: WornWalk_1
+  - first:
+      213: 5190085578598444780
+    second: WornWalk_2
+  - first:
+      213: 6591600459622033014
+    second: WornWalk_3
+  - first:
+      213: 8720138534252468122
+    second: WornWalk_4
+  - first:
+      213: -1309743418717775919
+    second: WornWalk_5
+  - first:
+      213: -6201236015451515247
+    second: WornWalk_6
+  - first:
+      213: -6974140642475280345
+    second: WornWalk_7
+  - first:
+      213: -3579611578415157093
+    second: WornWalk_8
+  - first:
+      213: -4043093553802827617
+    second: WornWalk_9
+  - first:
+      213: 5000910489671348186
+    second: WornWalk_10
+  - first:
+      213: -7951770336777757038
+    second: WornWalk_11
+  - first:
+      213: -7566870879507635648
+    second: WornWalk_12
+  - first:
+      213: -3510389652214329613
+    second: WornWalk_13
+  - first:
+      213: 1285357402173059939
+    second: WornWalk_14
+  - first:
+      213: 1359930552881611133
+    second: WornWalk_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WornWalk_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 206
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f420a2ef9fa2b540800000000000000
+      internalID: 5022269635708331254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 206
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f4fbdcb89736310800000000000000
+      internalID: 1397093950774267682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 206
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceeec32e553e60840800000000000000
+      internalID: 5190085578598444780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 206
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676a219b1b11a7b50800000000000000
+      internalID: 6591600459622033014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 142
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97505eabc7240970800000000000000
+      internalID: 8720138534252468122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 142
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7db6ccc4bd2dde0800000000000000
+      internalID: -1309743418717775919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 142
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19657a213b8c0f9a0800000000000000
+      internalID: -6201236015451515247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_7
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 142
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72875a74900e63f90800000000000000
+      internalID: -6974140642475280345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 82
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9070ba2c3aa25ec0800000000000000
+      internalID: -3579611578415157093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 82
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9829e385db04e7c0800000000000000
+      internalID: -4043093553802827617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 82
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfa26a289dc66540800000000000000
+      internalID: 5000910489671348186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 82
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e9fdc4203a5a190800000000000000
+      internalID: -7951770336777757038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 14
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04223bda6031df690800000000000000
+      internalID: -7566870879507635648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 14
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fece8cc537984fc0800000000000000
+      internalID: -3510389652214329613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 14
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363b1f54fb186d110800000000000000
+      internalID: 1285357402173059939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornWalk_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 14
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7185b3f1a17fd210800000000000000
+      internalID: 1359930552881611133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WornWalk_0: 5022269635708331254
+      WornWalk_1: 1397093950774267682
+      WornWalk_10: 5000910489671348186
+      WornWalk_11: -7951770336777757038
+      WornWalk_12: -7566870879507635648
+      WornWalk_13: -3510389652214329613
+      WornWalk_14: 1285357402173059939
+      WornWalk_15: 1359930552881611133
+      WornWalk_2: 5190085578598444780
+      WornWalk_3: 6591600459622033014
+      WornWalk_4: 8720138534252468122
+      WornWalk_5: -1309743418717775919
+      WornWalk_6: -6201236015451515247
+      WornWalk_7: -6974140642475280345
+      WornWalk_8: -3579611578415157093
+      WornWalk_9: -4043093553802827617
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

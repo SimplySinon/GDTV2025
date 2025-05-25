@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: d2c8463b66ae9cc438b8c25dcab46633
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4350706789140603411
+    second: SlimeShot_0
+  - first:
+      213: -7402534883704622637
+    second: SlimeShot_1
+  - first:
+      213: -811997194396442982
+    second: SlimeShot_2
+  - first:
+      213: -5060215891175137325
+    second: SlimeShot_3
+  - first:
+      213: 3898560581575695571
+    second: SlimeShot_4
+  - first:
+      213: -9210948259071888440
+    second: SlimeShot_5
+  - first:
+      213: 3836073603985863249
+    second: SlimeShot_6
+  - first:
+      213: -8715330011515271105
+    second: SlimeShot_7
+  - first:
+      213: -5855270062165065375
+    second: SlimeShot_8
+  - first:
+      213: -6569955533423901840
+    second: SlimeShot_9
+  - first:
+      213: 6662195755595117851
+    second: SlimeShot_10
+  - first:
+      213: -1090695903703144584
+    second: SlimeShot_11
+  - first:
+      213: 3748431982546085571
+    second: SlimeShot_12
+  - first:
+      213: 8623129732355798169
+    second: SlimeShot_13
+  - first:
+      213: 6305516768569371702
+    second: SlimeShot_14
+  - first:
+      213: -2385960181913688076
+    second: SlimeShot_15
+  - first:
+      213: -4715286202518285567
+    second: SlimeShot_16
+  - first:
+      213: -9116410487752202327
+    second: SlimeShot_17
+  - first:
+      213: -1368215838718294246
+    second: SlimeShot_18
+  - first:
+      213: -3905470899543702921
+    second: SlimeShot_19
+  - first:
+      213: 9063260300940308808
+    second: SlimeShot_20
+  - first:
+      213: -5432368049084171407
+    second: SlimeShot_21
+  - first:
+      213: -1238930583684572191
+    second: SlimeShot_22
+  - first:
+      213: 2330331957371480000
+    second: SlimeShot_23
+  - first:
+      213: -7487262864374800528
+    second: SlimeShot_24
+  - first:
+      213: 4390416006945220096
+    second: SlimeShot_25
+  - first:
+      213: 5209435374201573798
+    second: SlimeShot_26
+  - first:
+      213: -1031291167709045702
+    second: SlimeShot_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SlimeShot_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 102
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedd46fe93f2f93c0800000000000000
+      internalID: -4350706789140603411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 102
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1395b5eb9e44990800000000000000
+      internalID: -7402534883704622637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 102
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ed2659ad43bb4f0800000000000000
+      internalID: -811997194396442982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 100
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df18b7057086c9b0800000000000000
+      internalID: -5060215891175137325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 101
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcd82881387a1630800000000000000
+      internalID: 3898560581575695571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 102
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3748d2c532c2080800000000000000
+      internalID: -9210948259071888440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 100
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15274d15e987c3530800000000000000
+      internalID: 3836073603985863249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 72
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38c453c78dec0780800000000000000
+      internalID: -8715330011515271105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 73
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1610ca8a6e6edbea0800000000000000
+      internalID: -5855270062165065375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 73
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07308206044d2d4a0800000000000000
+      internalID: -6569955533423901840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 74
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15bc5cedbfd47c50800000000000000
+      internalID: 6662195755595117851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_11
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 73
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877ecc5bad11dd0f0800000000000000
+      internalID: -1090695903703144584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 73
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c66f50370b150430800000000000000
+      internalID: 3748431982546085571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 71
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9943d25edc28ba770800000000000000
+      internalID: 8623129732355798169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 40
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ca8dbc712b18750800000000000000
+      internalID: 6305516768569371702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 42
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7eecc1bdd53eed0800000000000000
+      internalID: -2385960181913688076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 42
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103d8947e20ff8eb0800000000000000
+      internalID: -4715286202518285567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 43
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a762e256f00c7180800000000000000
+      internalID: -9116410487752202327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_18
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 42
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17022d91fe130de0800000000000000
+      internalID: -1368215838718294246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_19
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 42
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7728210b8eafcc9c0800000000000000
+      internalID: -3905470899543702921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 41
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8417278793b27cd70800000000000000
+      internalID: 9063260300940308808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 8
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bf7219a0a5c94b0800000000000000
+      internalID: -5432368049084171407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 8
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb1d12c23f6ecee0800000000000000
+      internalID: -1238930583684572191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_23
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 8
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c72edf8190075020800000000000000
+      internalID: 2330331957371480000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_24
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 6
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f57f41816e71890800000000000000
+      internalID: -7487262864374800528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 7
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006a82ec814edec30800000000000000
+      internalID: 4390416006945220096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 8
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a193af3fd1ab4840800000000000000
+      internalID: 5209435374201573798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeShot_27
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 6
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c54b0a52e10b1f0800000000000000
+      internalID: -1031291167709045702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SlimeShot_0: -4350706789140603411
+      SlimeShot_1: -7402534883704622637
+      SlimeShot_10: 6662195755595117851
+      SlimeShot_11: -1090695903703144584
+      SlimeShot_12: 3748431982546085571
+      SlimeShot_13: 8623129732355798169
+      SlimeShot_14: 6305516768569371702
+      SlimeShot_15: -2385960181913688076
+      SlimeShot_16: -4715286202518285567
+      SlimeShot_17: -9116410487752202327
+      SlimeShot_18: -1368215838718294246
+      SlimeShot_19: -3905470899543702921
+      SlimeShot_2: -811997194396442982
+      SlimeShot_20: 9063260300940308808
+      SlimeShot_21: -5432368049084171407
+      SlimeShot_22: -1238930583684572191
+      SlimeShot_23: 2330331957371480000
+      SlimeShot_24: -7487262864374800528
+      SlimeShot_25: 4390416006945220096
+      SlimeShot_26: 5209435374201573798
+      SlimeShot_27: -1031291167709045702
+      SlimeShot_3: -5060215891175137325
+      SlimeShot_4: 3898560581575695571
+      SlimeShot_5: -9210948259071888440
+      SlimeShot_6: 3836073603985863249
+      SlimeShot_7: -8715330011515271105
+      SlimeShot_8: -5855270062165065375
+      SlimeShot_9: -6569955533423901840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

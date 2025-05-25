@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 1b245d571064094479f5994321e158ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8227488899597590235
+    second: Green_Mantis_Attack_0
+  - first:
+      213: 7991280761555050210
+    second: Green_Mantis_Attack_1
+  - first:
+      213: 8794271071152472387
+    second: Green_Mantis_Attack_2
+  - first:
+      213: 165195566404410166
+    second: Green_Mantis_Attack_3
+  - first:
+      213: -7803844093605493677
+    second: Green_Mantis_Attack_4
+  - first:
+      213: 3040777252327556247
+    second: Green_Mantis_Attack_5
+  - first:
+      213: -7019269623533964539
+    second: Green_Mantis_Attack_6
+  - first:
+      213: 4096690460772300053
+    second: Green_Mantis_Attack_7
+  - first:
+      213: -3401371060652630180
+    second: Green_Mantis_Attack_8
+  - first:
+      213: -5249202336669308620
+    second: Green_Mantis_Attack_9
+  - first:
+      213: -5944071257656663836
+    second: Green_Mantis_Attack_10
+  - first:
+      213: 8174712447512118548
+    second: Green_Mantis_Attack_11
+  - first:
+      213: -2838820375880830290
+    second: Green_Mantis_Attack_12
+  - first:
+      213: -7449509587649783681
+    second: Green_Mantis_Attack_13
+  - first:
+      213: 2165342363568237278
+    second: Green_Mantis_Attack_14
+  - first:
+      213: -3709754313153233981
+    second: Green_Mantis_Attack_15
+  - first:
+      213: 1149466733731187964
+    second: Green_Mantis_Attack_16
+  - first:
+      213: -7013305426917277808
+    second: Green_Mantis_Attack_17
+  - first:
+      213: 1532567491580533890
+    second: Green_Mantis_Attack_18
+  - first:
+      213: -874959183525754782
+    second: Green_Mantis_Attack_19
+  - first:
+      213: -5589910833593248057
+    second: Green_Mantis_Attack_20
+  - first:
+      213: 5599401138894912576
+    second: Green_Mantis_Attack_21
+  - first:
+      213: -8034010743856411602
+    second: Green_Mantis_Attack_22
+  - first:
+      213: -497849680977709654
+    second: Green_Mantis_Attack_23
+  - first:
+      213: -5186403832887570754
+    second: Green_Mantis_Attack_24
+  - first:
+      213: 8578803200328943746
+    second: Green_Mantis_Attack_25
+  - first:
+      213: 6918626247550474951
+    second: Green_Mantis_Attack_26
+  - first:
+      213: 7297291144671978278
+    second: Green_Mantis_Attack_27
+  - first:
+      213: -985317012104395374
+    second: Green_Mantis_Attack_28
+  - first:
+      213: -8622196483528844998
+    second: Green_Mantis_Attack_29
+  - first:
+      213: 3795100449173004129
+    second: Green_Mantis_Attack_30
+  - first:
+      213: -4260552397358689931
+    second: Green_Mantis_Attack_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521240adf6612dd80800000000000000
+      internalID: -8227488899597590235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 192
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eed6e4538bb6ee60800000000000000
+      internalID: 7991280761555050210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 192
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3418986f1f68b0a70800000000000000
+      internalID: 8794271071152472387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b110e0e74ea4200800000000000000
+      internalID: 165195566404410166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 192
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3544d16b42d23b390800000000000000
+      internalID: -7803844093605493677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 65
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794821edcc2033a20800000000000000
+      internalID: 3040777252327556247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 191
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5037192977b869e90800000000000000
+      internalID: -7019269623533964539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 191
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5157015d44e5ad830800000000000000
+      internalID: 4096690460772300053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f9184aa07ebc0d0800000000000000
+      internalID: -3401371060652630180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439eca849461727b0800000000000000
+      internalID: -5249202336669308620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 127
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0e3c72faa628da0800000000000000
+      internalID: -5944071257656663836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4158ce6d8a9627170800000000000000
+      internalID: 8174712447512118548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 127
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea27b7aa8eb7a98d0800000000000000
+      internalID: -2838820375880830290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 127
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78944dcf760e9890800000000000000
+      internalID: -7449509587649783681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 127
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edae69d3867dc0e10800000000000000
+      internalID: 2165342363568237278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 66
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb37887b1e448cc0800000000000000
+      internalID: -3709754313153233981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 66
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc0d2977e9b3ff00800000000000000
+      internalID: 1149466733731187964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 64
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fb64f4fdbbbae90800000000000000
+      internalID: -7013305426917277808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 66
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c18f18306c44510800000000000000
+      internalID: 1532567491580533890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 66
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2684bf022458bd3f0800000000000000
+      internalID: -874959183525754782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 66
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c61195a6b5ac62b0800000000000000
+      internalID: -5589910833593248057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_21
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 66
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cbfbe3ba115bd40800000000000000
+      internalID: 5599401138894912576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c44c26bc5718090800000000000000
+      internalID: -8034010743856411602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa538c55a584719f0800000000000000
+      internalID: -497849680977709654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe030751313608b0800000000000000
+      internalID: -5186403832887570754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2884799ee080e0770800000000000000
+      internalID: 8578803200328943746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca90fa6ae5e30060800000000000000
+      internalID: 6918626247550474951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623e6c422af254560800000000000000
+      internalID: 7297291144671978278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_28
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 11
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2954e5ed5637352f0800000000000000
+      internalID: -985317012104395374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_29
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 10
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3914a70bfdc75880800000000000000
+      internalID: -8622196483528844998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_30
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fd1ef40c7eaa430800000000000000
+      internalID: 3795100449173004129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Mantis_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 10
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5711f700b2a7fd4c0800000000000000
+      internalID: -4260552397358689931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Green_Mantis_Attack_0: -8227488899597590235
+      Green_Mantis_Attack_1: 7991280761555050210
+      Green_Mantis_Attack_10: -5944071257656663836
+      Green_Mantis_Attack_11: 8174712447512118548
+      Green_Mantis_Attack_12: -2838820375880830290
+      Green_Mantis_Attack_13: -7449509587649783681
+      Green_Mantis_Attack_14: 2165342363568237278
+      Green_Mantis_Attack_15: -3709754313153233981
+      Green_Mantis_Attack_16: 1149466733731187964
+      Green_Mantis_Attack_17: -7013305426917277808
+      Green_Mantis_Attack_18: 1532567491580533890
+      Green_Mantis_Attack_19: -874959183525754782
+      Green_Mantis_Attack_2: 8794271071152472387
+      Green_Mantis_Attack_20: -5589910833593248057
+      Green_Mantis_Attack_21: 5599401138894912576
+      Green_Mantis_Attack_22: -8034010743856411602
+      Green_Mantis_Attack_23: -497849680977709654
+      Green_Mantis_Attack_24: -5186403832887570754
+      Green_Mantis_Attack_25: 8578803200328943746
+      Green_Mantis_Attack_26: 6918626247550474951
+      Green_Mantis_Attack_27: 7297291144671978278
+      Green_Mantis_Attack_28: -985317012104395374
+      Green_Mantis_Attack_29: -8622196483528844998
+      Green_Mantis_Attack_3: 165195566404410166
+      Green_Mantis_Attack_30: 3795100449173004129
+      Green_Mantis_Attack_31: -4260552397358689931
+      Green_Mantis_Attack_4: -7803844093605493677
+      Green_Mantis_Attack_5: 3040777252327556247
+      Green_Mantis_Attack_6: -7019269623533964539
+      Green_Mantis_Attack_7: 4096690460772300053
+      Green_Mantis_Attack_8: -3401371060652630180
+      Green_Mantis_Attack_9: -5249202336669308620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

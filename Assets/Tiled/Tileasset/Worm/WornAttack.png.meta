@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 4fc33ee74c5e98c41bf854f37768147a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4654986721825382372
+    second: WornAttack_0
+  - first:
+      213: -8747610300064188823
+    second: WornAttack_1
+  - first:
+      213: -9068458794436932320
+    second: WornAttack_2
+  - first:
+      213: 5756389601225390549
+    second: WornAttack_3
+  - first:
+      213: 3778670807350159926
+    second: WornAttack_4
+  - first:
+      213: 2663186757286830123
+    second: WornAttack_5
+  - first:
+      213: 8190639911056981678
+    second: WornAttack_6
+  - first:
+      213: 8862902536793936336
+    second: WornAttack_7
+  - first:
+      213: -4940951023060590402
+    second: WornAttack_8
+  - first:
+      213: 4622452225970562352
+    second: WornAttack_9
+  - first:
+      213: -4732477226018274414
+    second: WornAttack_10
+  - first:
+      213: -3623524462783795135
+    second: WornAttack_11
+  - first:
+      213: -2333912715869178682
+    second: WornAttack_12
+  - first:
+      213: -7363877645289680455
+    second: WornAttack_13
+  - first:
+      213: 2176965499254310070
+    second: WornAttack_14
+  - first:
+      213: -4550305762343616937
+    second: WornAttack_15
+  - first:
+      213: -8820250305073909836
+    second: WornAttack_16
+  - first:
+      213: 1801449904266742976
+    second: WornAttack_17
+  - first:
+      213: -8845944011108719362
+    second: WornAttack_18
+  - first:
+      213: 4992170961674943433
+    second: WornAttack_19
+  - first:
+      213: -3340441160202397769
+    second: WornAttack_20
+  - first:
+      213: -7963732025768336347
+    second: WornAttack_21
+  - first:
+      213: -3236499681678308728
+    second: WornAttack_22
+  - first:
+      213: -3700637915967278476
+    second: WornAttack_23
+  - first:
+      213: 929947847011626120
+    second: WornAttack_24
+  - first:
+      213: 796043070390547975
+    second: WornAttack_25
+  - first:
+      213: 3514136061418255207
+    second: WornAttack_26
+  - first:
+      213: -508679746677698655
+    second: WornAttack_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WornAttack_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 208
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efdf84a2c5d99040800000000000000
+      internalID: 4654986721825382372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 208
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966302767ce3a9680800000000000000
+      internalID: -8747610300064188823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 208
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dc151f5cc562280800000000000000
+      internalID: -9068458794436932320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 208
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9bac9f7ddc2ef40800000000000000
+      internalID: 5756389601225390549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 208
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63aae3b3419807430800000000000000
+      internalID: 3778670807350159926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 208
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b202b9ede3a85f420800000000000000
+      internalID: 2663186757286830123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 208
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae30bd6a9ffaa170800000000000000
+      internalID: 8190639911056981678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1d28846ea5ffa70800000000000000
+      internalID: 8862902536793936336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 144
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0eed909373e6bb0800000000000000
+      internalID: -4940951023060590402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_9
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 144
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03560380fcf362040800000000000000
+      internalID: 4622452225970562352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_10
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 144
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2930e83690dd25eb0800000000000000
+      internalID: -4732477226018274414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14075d803b7a6bdc0800000000000000
+      internalID: -3623524462783795135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4b9d120c64c9fd0800000000000000
+      internalID: -2333912715869178682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_13
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 144
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1911f0c404ec990800000000000000
+      internalID: -7363877645289680455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 90
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b485576692263e10800000000000000
+      internalID: 2176965499254310070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 90
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e781884011ad0c0800000000000000
+      internalID: -4550305762343616937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 90
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfe908441d289580800000000000000
+      internalID: -8820250305073909836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_17
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 90
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc0b78b429000910800000000000000
+      internalID: 1801449904266742976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_18
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 90
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4eeda2ac4ec3580800000000000000
+      internalID: -8845944011108719362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_19
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 90
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbb7ac3a01c74540800000000000000
+      internalID: 4992170961674943433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_20
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 90
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7da05967e54a1d0800000000000000
+      internalID: -3340441160202397769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 16
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5242dad8ae32b7190800000000000000
+      internalID: -7963732025768336347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 16
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a46edefa4a513d0800000000000000
+      internalID: -3236499681678308728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 16
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472bd681c61b4acc0800000000000000
+      internalID: -3700637915967278476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_24
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 16
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c64c8c3a6d7ec00800000000000000
+      internalID: 929947847011626120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 16
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7063a8474fc1c0b00800000000000000
+      internalID: 796043070390547975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_26
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 16
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763b9311128b4c030800000000000000
+      internalID: 3514136061418255207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WornAttack_27
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af07da277ec0f8f0800000000000000
+      internalID: -508679746677698655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WornAttack_0: 4654986721825382372
+      WornAttack_1: -8747610300064188823
+      WornAttack_10: -4732477226018274414
+      WornAttack_11: -3623524462783795135
+      WornAttack_12: -2333912715869178682
+      WornAttack_13: -7363877645289680455
+      WornAttack_14: 2176965499254310070
+      WornAttack_15: -4550305762343616937
+      WornAttack_16: -8820250305073909836
+      WornAttack_17: 1801449904266742976
+      WornAttack_18: -8845944011108719362
+      WornAttack_19: 4992170961674943433
+      WornAttack_2: -9068458794436932320
+      WornAttack_20: -3340441160202397769
+      WornAttack_21: -7963732025768336347
+      WornAttack_22: -3236499681678308728
+      WornAttack_23: -3700637915967278476
+      WornAttack_24: 929947847011626120
+      WornAttack_25: 796043070390547975
+      WornAttack_26: 3514136061418255207
+      WornAttack_27: -508679746677698655
+      WornAttack_3: 5756389601225390549
+      WornAttack_4: 3778670807350159926
+      WornAttack_5: 2663186757286830123
+      WornAttack_6: 8190639911056981678
+      WornAttack_7: 8862902536793936336
+      WornAttack_8: -4940951023060590402
+      WornAttack_9: 4622452225970562352
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

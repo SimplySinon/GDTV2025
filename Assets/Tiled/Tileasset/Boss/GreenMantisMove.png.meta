@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: f607624b94070ad45b2163f1a2631932
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7178064984519066219
+    second: GreenMantisMove_0
+  - first:
+      213: -8535459993928588056
+    second: GreenMantisMove_1
+  - first:
+      213: -3012345590149861291
+    second: GreenMantisMove_2
+  - first:
+      213: -2989020153529555097
+    second: GreenMantisMove_3
+  - first:
+      213: 2504404841068817658
+    second: GreenMantisMove_4
+  - first:
+      213: -3984271692888595511
+    second: GreenMantisMove_5
+  - first:
+      213: 1758832788382536273
+    second: GreenMantisMove_6
+  - first:
+      213: 3214477980681888517
+    second: GreenMantisMove_7
+  - first:
+      213: 7488637626060665777
+    second: GreenMantisMove_8
+  - first:
+      213: 7912435371008141212
+    second: GreenMantisMove_9
+  - first:
+      213: -2350191331391166589
+    second: GreenMantisMove_10
+  - first:
+      213: 5683533109423456364
+    second: GreenMantisMove_11
+  - first:
+      213: 5670918273097485587
+    second: GreenMantisMove_12
+  - first:
+      213: -8147769000679653567
+    second: GreenMantisMove_13
+  - first:
+      213: 312943379029161002
+    second: GreenMantisMove_14
+  - first:
+      213: 649001066595610949
+    second: GreenMantisMove_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreenMantisMove_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 194
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d32177de3626c90800000000000000
+      internalID: -7178064984519066219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 193
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4245bbb54fb8980800000000000000
+      internalID: -8535459993928588056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 194
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550376655aff136d0800000000000000
+      internalID: -3012345590149861291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 193
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7672362c10ed486d0800000000000000
+      internalID: -2989020153529555097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 130
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcecad1fee61c220800000000000000
+      internalID: 2504404841068817658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 130
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c32bb0410605b8c0800000000000000
+      internalID: -3984271692888595511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 130
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152d9d23a11a86810800000000000000
+      internalID: 1758832788382536273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 130
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503ebd041be1c9c20800000000000000
+      internalID: 3214477980681888517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 66
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b378f09e3cfce760800000000000000
+      internalID: 7488637626060665777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 66
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c972d2d4c0e9ecd60800000000000000
+      internalID: 7912435371008141212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3872a3a9f61726fd0800000000000000
+      internalID: -2350191331391166589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 66
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c604b581047ffde40800000000000000
+      internalID: 5683533109423456364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d4f32af1623be40800000000000000
+      internalID: 5670918273097485587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 3
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fbc8a334f4dee80800000000000000
+      internalID: -8147769000679653567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24f7dd585cc75400800000000000000
+      internalID: 312943379029161002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMantisMove_15
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541f7411807b10900800000000000000
+      internalID: 649001066595610949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GreenMantisMove_0: -7178064984519066219
+      GreenMantisMove_1: -8535459993928588056
+      GreenMantisMove_10: -2350191331391166589
+      GreenMantisMove_11: 5683533109423456364
+      GreenMantisMove_12: 5670918273097485587
+      GreenMantisMove_13: -8147769000679653567
+      GreenMantisMove_14: 312943379029161002
+      GreenMantisMove_15: 649001066595610949
+      GreenMantisMove_2: -3012345590149861291
+      GreenMantisMove_3: -2989020153529555097
+      GreenMantisMove_4: 2504404841068817658
+      GreenMantisMove_5: -3984271692888595511
+      GreenMantisMove_6: 1758832788382536273
+      GreenMantisMove_7: 3214477980681888517
+      GreenMantisMove_8: 7488637626060665777
+      GreenMantisMove_9: 7912435371008141212
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

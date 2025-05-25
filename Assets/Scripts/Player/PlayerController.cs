@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
 
     [Space, Header("Character Details")]
-    [SerializeField] float health = 100;
+    [SerializeField] public float health = 100;
     [SerializeField] float meleeAttackDamage = 10;
     [SerializeField] float rangedAttackDamage = 5;
     [SerializeField] private Projectile playerRangedProjectile;
@@ -126,9 +127,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        if (isDead) return; // ← Evita cualquier movimiento si está muerto
+
         if (currentState == State.Attacking)
         {
-            // TODO: Confirm if Attack should be in place, if move attack is allowed remove bottom line
             rb.linearVelocity = Vector2.zero;
             attackCollider.enabled = true;
             defendCollider.enabled = false;
@@ -139,10 +141,8 @@ public class PlayerController : MonoBehaviour
             attackCollider.enabled = false;
         }
 
-
         if (currentState == State.Defending)
         {
-            // TODO: Confirm if Defend should be in place, if move defense is allowed remove bottom line
             rb.linearVelocity = Vector2.zero;
             defendCollider.enabled = true;
             attackCollider.enabled = false;
@@ -153,8 +153,6 @@ public class PlayerController : MonoBehaviour
             defendCollider.enabled = false;
         }
 
-
-
         Move();
         Helpers.RaiseIfNotNull(playerPositionEventChannel, transform.position);
     }
@@ -164,22 +162,61 @@ public class PlayerController : MonoBehaviour
         currentRoom = roomConfig;
     }
 
+    private bool isDead = false;
+
     private void OnEnemyAttack(float attackDamage)
     {
-        if (currentState == State.Defending)
-        {
+        if (isDead || currentState == State.Defending)
             return;
-        }
 
         health = Mathf.Clamp(health - attackDamage, 0, 100);
 
+        if (currentState != State.Defending)
+        {
+            Vector2 knockbackDirection = -(previousMoveInput != Vector2.zero ? previousMoveInput.normalized : Vector2.up);
+            rb.AddForce(knockbackDirection * 200f, ForceMode2D.Impulse);
+        }
+
         if (health <= 0)
         {
-            // Change Player State to Dead
-            currentState = State.Dead;
-            // Run any Death related logic
-            Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player died");
+        isDead = true;
+        currentState = State.Dead;
+        rb.linearVelocity = Vector2.zero;
+        rb.isKinematic = true;
+        Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
+
+        // Apagamos colisiones y l�gica
+        bodyCollider.enabled = false;
+        hitboxCollider.enabled = false;
+        attackCollider.enabled = false;
+        defendCollider.enabled = false;
+
+        // Esperamos 1 segundo antes de reaparecer
+        Invoke(nameof(Respawn), 1f);
+    }
+    public void ResetState()
+    {
+        health = 100;
+        isDead = false;
+        rb.isKinematic = false;
+        bodyCollider.enabled = true;
+        hitboxCollider.enabled = true;
+        attackCollider.enabled = false;
+        defendCollider.enabled = false;
+        currentState = State.Idle;
+        Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
+    }
+
+    private void Respawn()
+    {
+        PlayerSpawnManager.Instance.RespawnPlayer(gameObject);
     }
 
     private void OnAttackInput(bool attackInput)
@@ -213,35 +250,39 @@ public class PlayerController : MonoBehaviour
     {
         RaiseEventOnce(State.Idle);
 
-        // Priority: Defense is always highest priority
-        if (isAttackInput && timer <= 0) currentState = State.Attacking;
-        if (isRangedAttackInput && timer <= 0) currentState = State.RangedAttack;
-        if (isDefendingInput && timer <= 0) currentState = State.Defending;
-
-        if (currentState == State.RangedAttack && timer <= 0)
+        if (isDefendingInput && timer <= 0)
         {
-            AttackFromRange();
+            currentState = State.Defending;
+            Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
             return;
         }
 
-        if (activeActions.Contains(currentState) && timer <= 0)
+        if (isAttackInput && timer <= 0)
         {
+            currentState = State.Attacking;
             Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
             timer = cooldown;
             return;
         }
 
-
-        if (moveInput.magnitude > 0.1f || moveInput.magnitude < -0.1f)
+        if (isRangedAttackInput && timer <= 0)
         {
-            Helpers.RaiseIfNotNull(playerStateEventChannel, new(State.Moving));
-            currentState = State.Moving;
+            currentState = State.RangedAttack;
+            AttackFromRange();
             return;
         }
 
-        if (!isAttackInput && !isDefendingInput && !isRangedAttackInput)
-            RaiseEventOnce(State.Idle);
+        if (moveInput.magnitude > 0.1f)
+        {
+            currentState = State.Moving;
+            Helpers.RaiseIfNotNull(playerStateEventChannel, new(State.Moving));
+            return;
+        }
+
+        // Si no hay acciones activas, quedate en Idle
+        RaiseEventOnce(State.Idle);
     }
+
 
     private void RaiseEventOnce(State state)
     {
@@ -316,11 +357,16 @@ public class PlayerController : MonoBehaviour
         {
             MeleeDamageEnemy(other.gameObject);
         }
-        else
+ 
+        if (other.gameObject.CompareTag("Dead"))
         {
-            // TODO: Add Shield Sounds and Effects
-            // If Spawning effects take the position of the defendCollider to spawn your VFX
-            Debug.Log($"Is Defending: {other.gameObject.name}");
+            Die();
+        }
+        if (other.gameObject.CompareTag("End"))
+        {
+            SceneManager.LoadScene("Credits");
         }
     }
+
+
 }
