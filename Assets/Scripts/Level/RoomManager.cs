@@ -38,6 +38,17 @@ public class RoomManager : MonoBehaviour
         config = new();
         config.RoomId = GetInstanceID();
         config.RoomBounds = GetComponent<Collider2D>();
+        enemiesContainer = transform;
+
+        if (ambientMusic == null)
+        {
+            ambientMusic = gameObject.AddComponent<AudioSource>();
+        }
+
+        if (battleMusic == null)
+        {
+            battleMusic = gameObject.AddComponent<AudioSource>();
+        }
 
         if (config.RoomBounds == null)
         {
@@ -55,10 +66,10 @@ public class RoomManager : MonoBehaviour
 
     void Update()
     {
-        
-        
-            CheckIfEnemiesDefeated();
-        
+
+
+        CheckIfEnemiesDefeated();
+
     }
 
     void OnWaveCompleted(int id)
@@ -73,7 +84,7 @@ public class RoomManager : MonoBehaviour
     {
         if (playerLayer.Contains(other.gameObject.layer))
         {
-            
+
             OnRoomTriggerEnter();
             SpawnNextWave();
             InvokeRepeating("CheckEnemies", 1f, 1f);
@@ -125,7 +136,7 @@ public class RoomManager : MonoBehaviour
             roomEnemiesDefeated = true;
             waveSpawned = false;
             Debug.Log("All enemies defeated in room: " + config.RoomId);
-         
+
         }
     }
 
@@ -150,7 +161,7 @@ public class RoomManager : MonoBehaviour
         else if (aliveCount == 0 && battleMusicPlaying)
         {
             battleMusic.Stop();
-            ambientMusic.Play();
+            ambientMusic?.Play();
             battleMusicPlaying = false;
         }
     }

@@ -1057,7 +1057,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -40.309937, y: -75.32802}
+  m_AnchoredPosition: {x: -40.309937, y: -75.328}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &120626213
@@ -8392,13 +8392,13 @@ PolygonCollider2D:
       - {x: 5.5358915, y: -10.15601}
       - {x: 9.1273575, y: -10.150387}
       - {x: 9.112464, y: -15.709015}
-      - {x: -13.945854, y: -10.848951}
-      - {x: -14.381805, y: 15.75549}
-      - {x: -13.844779, y: -17.784124}
-      - {x: -8.421893, y: -17.878048}
-      - {x: -6.5577784, y: -17.883514}
+      - {x: -13.629561, y: -15.598322}
+      - {x: -13.663054, y: -15.771381}
+      - {x: -8.473365, y: -15.81538}
+      - {x: -8.47732, y: -17.828085}
+      - {x: -6.538044, y: -17.844488}
       - {x: -6.5676513, y: -15.786228}
-      - {x: 9.1770935, y: -15.784458}
+      - {x: 9.2592945, y: -15.804779}
       - {x: 9.205501, y: -10.159182}
       - {x: 9.292902, y: 0.42482775}
       - {x: 9.249235, y: 9.051443}
@@ -11194,11 +11194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: orthographic size
-      value: 8.4375
+      value: 7.5000005
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: -0.09375001
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -11206,11 +11206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.5208334
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.44444445
       objectReference: {fileID: 0}
     - target: {fileID: 9171703212939876507, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_LocalPosition.z

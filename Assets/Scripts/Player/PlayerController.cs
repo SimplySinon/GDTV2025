@@ -189,7 +189,7 @@ public class PlayerController : MonoBehaviour
         isDead = true;
         currentState = State.Dead;
         rb.linearVelocity = Vector2.zero;
-        rb.isKinematic = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
         Helpers.RaiseIfNotNull(playerStateEventChannel, new(currentState));
 
         // Apagamos colisiones y l�gica
@@ -205,7 +205,7 @@ public class PlayerController : MonoBehaviour
     {
         health = 100;
         isDead = false;
-        rb.isKinematic = false;
+        rb.bodyType = RigidbodyType2D.Dynamic;
         bodyCollider.enabled = true;
         hitboxCollider.enabled = true;
         attackCollider.enabled = false;
@@ -357,7 +357,7 @@ public class PlayerController : MonoBehaviour
         {
             MeleeDamageEnemy(other.gameObject);
         }
- 
+
         if (other.gameObject.CompareTag("Dead"))
         {
             Die();
