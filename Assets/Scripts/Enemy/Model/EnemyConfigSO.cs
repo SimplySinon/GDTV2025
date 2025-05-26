@@ -34,7 +34,7 @@ public class EnemyConfigSO : ScriptableObject
     public EnemyMovementAIType MovementAIType;
 
 }
-
+#if UNITY_EDITOR 
 [CustomEditor(typeof(EnemyConfigSO))]
 public class EnemyConfigSOEditor : Editor
 {
@@ -156,3 +156,4 @@ public class EnemyConfigSOEditor : Editor
     }
 
 }
+#endif
