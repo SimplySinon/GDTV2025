@@ -9,10 +9,6 @@ public class FinishCredits : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        
-    }
     public void finishCredits()
     {
         SceneManager.LoadScene("MainMenu");
