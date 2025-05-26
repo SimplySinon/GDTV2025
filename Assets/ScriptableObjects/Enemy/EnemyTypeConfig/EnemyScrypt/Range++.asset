@@ -16,7 +16,7 @@ MonoBehaviour:
   MoveSpeed: 0
   ChargeSpeed: 0
   WanderSpeed: 0
-  FollowSpeed: 1
+  FollowSpeed: 3
   IsRanged: 1
   AttackCooldown: 1
   AttackDuration: 0.25
@@ -28,8 +28,8 @@ MonoBehaviour:
   ChargeCooldown: 0
   ProximityRange: 0
   AttackRange: 10
-  BufferMinDistance: 1.5
-  BufferMaxDistance: 3
+  BufferMinDistance: 3
+  BufferMaxDistance: 6
   MaxHealth: 60
   MaxDamage: 15
   MinDamage: 10

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,12 +25,12 @@ public class RoomManager : MonoBehaviour
     private bool waveSpawned = false;
 
     public Transform enemiesContainer;
-    public AudioSource ambientMusic;
-    public AudioSource battleMusic;
+    public AudioSource musicSource;
+    public AudioClip ambientClip;
+    public AudioClip battleClip;
 
     private bool playerInside = false;
-    private bool battleMusicPlaying = false;
-
+    private bool musicSwitched = false;
 
     void Start()
     {
@@ -40,14 +39,9 @@ public class RoomManager : MonoBehaviour
         config.RoomBounds = GetComponent<Collider2D>();
         enemiesContainer = transform;
 
-        if (ambientMusic == null)
+        if (musicSource == null)
         {
-            ambientMusic = gameObject.AddComponent<AudioSource>();
-        }
-
-        if (battleMusic == null)
-        {
-            battleMusic = gameObject.AddComponent<AudioSource>();
+            musicSource = gameObject.AddComponent<AudioSource>();
         }
 
         if (config.RoomBounds == null)
@@ -57,6 +51,8 @@ public class RoomManager : MonoBehaviour
         config.RoomBounds.isTrigger = true;
 
         currentWave = -1;
+
+        PlayMusic(ambientClip);
     }
 
     void OnEnable()
@@ -66,10 +62,13 @@ public class RoomManager : MonoBehaviour
 
     void Update()
     {
-
-
         CheckIfEnemiesDefeated();
 
+        if (!musicSource.isPlaying && !musicSwitched && roomEnemiesDefeated)
+        {
+            musicSwitched = true;
+            PlayMusic(battleClip); // o ambientClip según quieras qué suene después
+        }
     }
 
     void OnWaveCompleted(int id)
@@ -84,10 +83,8 @@ public class RoomManager : MonoBehaviour
     {
         if (playerLayer.Contains(other.gameObject.layer))
         {
-
             OnRoomTriggerEnter();
             SpawnNextWave();
-            InvokeRepeating("CheckEnemies", 1f, 1f);
         }
     }
 
@@ -97,7 +94,6 @@ public class RoomManager : MonoBehaviour
             cameraConfig.CameraPosition = transform.position;
 
         Helpers.RaiseIfNotNull(cameraConfigEventChannel, cameraConfig);
-        InvokeRepeating("CheckEnemies", 1f, 1f);
     }
 
     private void SpawnNextWave()
@@ -136,33 +132,13 @@ public class RoomManager : MonoBehaviour
             roomEnemiesDefeated = true;
             waveSpawned = false;
             Debug.Log("All enemies defeated in room: " + config.RoomId);
-
         }
     }
 
-    void CheckEnemies()
+    private void PlayMusic(AudioClip clip)
     {
-        int aliveCount = 0;
-
-        foreach (Transform enemy in enemiesContainer)
-        {
-            if (enemy != null && enemy.gameObject.activeInHierarchy)
-            {
-                aliveCount++;
-            }
-        }
-
-        if (aliveCount > 0 && !battleMusicPlaying)
-        {
-            ambientMusic.Stop();
-            battleMusic.Play();
-            battleMusicPlaying = true;
-        }
-        else if (aliveCount == 0 && battleMusicPlaying)
-        {
-            battleMusic.Stop();
-            ambientMusic?.Play();
-            battleMusicPlaying = false;
-        }
+        if (clip == null) return;
+        musicSource.clip = clip;
+        musicSource.Play();
     }
 }

@@ -690,7 +690,6 @@ RectTransform:
   - {fileID: 120626212}
   - {fileID: 1186000377}
   - {fileID: 917675014}
-  - {fileID: 289297673}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1310,8 +1309,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!1 &164718952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,8 +1440,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!1001 &165344265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1832,138 +1833,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
   m_PrefabInstance: {fileID: 269949323}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &289297672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 289297673}
-  - component: {fileID: 289297676}
-  - component: {fileID: 289297675}
-  - component: {fileID: 289297674}
-  m_Layer: 5
-  m_Name: Pause
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &289297673
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289297672}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4875, y: 1.7125, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 40913435}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -448, y: -230}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &289297674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289297672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 289297675}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 917675015}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &289297675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289297672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -5563991415239982128, guid: 22e2e45e5e3638249b14c66ed928c18c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &289297676
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289297672}
-  m_CullTransparentMesh: 1
 --- !u!1001 &300213085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2113,8 +1982,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &302347525
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2319,7 +2189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2345,11 +2215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.41480258
+      value: 0.6533141
       objectReference: {fileID: 0}
     - target: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5546133
+      value: 0.85531765
       objectReference: {fileID: 0}
     - target: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
       propertyPath: m_LocalScale.z
@@ -2357,11 +2227,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.0978
+      value: -11.107
       objectReference: {fileID: 0}
     - target: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.91
+      value: -14.51
       objectReference: {fileID: 0}
     - target: {fileID: 4275972100271940264, guid: 14746bde73853814da3923404b8affbe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3223,7 +3093,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3458,7 +3328,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3542,8 +3412,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &422821035
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3756,6 +3627,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427946593}
   m_CullTransparentMesh: 1
+--- !u!1 &444019451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444019453}
+  - component: {fileID: 444019452}
+  m_Layer: 0
+  m_Name: AdventureSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &444019452
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444019451}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.023
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &444019453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444019451}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.05497, y: -27.85392, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452601013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5975,8 +5975,9 @@ MonoBehaviour:
   enemySpawnConfigs: []
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &800233475
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6210,8 +6211,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &881662616
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6585,8 +6587,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &959227728
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6822,7 +6825,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7135,7 +7138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7604,7 +7607,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7917,7 +7920,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8309,8 +8312,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &1243982801
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9662,8 +9666,8 @@ Transform:
   m_GameObject: {fileID: 1493518556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.004, y: 137, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -38.034, y: 139.6, z: 0}
+  m_LocalScale: {x: 1.2750001, y: 1.2750001, z: 1.2750001}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 321091879}
@@ -9702,8 +9706,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &1493518559
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10868,8 +10873,9 @@ MonoBehaviour:
   enemySpawnConfigs: []
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &1647730639
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11181,11 +11187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: orthographic size
-      value: 0
+      value: 8.4375
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: -0.78125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -11193,11 +11199,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1.5625
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9170684195804107097, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9171703212939876507, guid: 7142ba6e6d229114e87c37b242e8f131, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11670,7 +11676,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: -995662735, guid: d107364a70ffe7f478579757870c074c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11907,8 +11913,9 @@ MonoBehaviour:
     WaveNo: 0
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!60 &1800781366
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13725,8 +13732,9 @@ MonoBehaviour:
   enemySpawnConfigs: []
   roomEnemiesDefeated: 0
   enemiesContainer: {fileID: 0}
-  ambientMusic: {fileID: 0}
-  battleMusic: {fileID: 0}
+  musicSource: {fileID: 444019452}
+  ambientClip: {fileID: 8300000, guid: ba961e28c93497a4fbe7af0499902216, type: 3}
+  battleClip: {fileID: 8300000, guid: 744509324522da0429ff0c571e730be8, type: 3}
 --- !u!1001 &2062341463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14410,3 +14418,4 @@ SceneRoots:
   - {fileID: 40913435}
   - {fileID: 1446115691}
   - {fileID: 2084704265}
+  - {fileID: 444019453}

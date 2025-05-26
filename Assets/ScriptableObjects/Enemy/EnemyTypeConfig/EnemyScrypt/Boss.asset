@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConfigName: Boss
   MoveSpeed: 4
-  ChargeSpeed: 0
-  WanderSpeed: 0
+  ChargeSpeed: 5
+  WanderSpeed: 10
   FollowSpeed: 0.25
   IsRanged: 0
   AttackCooldown: 1.5
@@ -26,7 +26,7 @@ MonoBehaviour:
   RelativeOffset: {x: 0, y: 0}
   ChargeTime: 0
   ChargeCooldown: 0
-  ProximityRange: 0
+  ProximityRange: 10
   AttackRange: 0
   BufferMinDistance: 1.5
   BufferMaxDistance: 3
@@ -34,4 +34,4 @@ MonoBehaviour:
   MaxDamage: 25
   MinDamage: 20
   ValueDiviation: 1
-  MovementAIType: 4
+  MovementAIType: 3

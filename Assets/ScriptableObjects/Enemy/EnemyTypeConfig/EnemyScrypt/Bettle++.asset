@@ -15,7 +15,7 @@ MonoBehaviour:
   ConfigName: Bettle
   MoveSpeed: 0
   ChargeSpeed: 2
-  WanderSpeed: 0
+  WanderSpeed: 6
   FollowSpeed: 0.25
   IsRanged: 0
   AttackCooldown: 1.5
@@ -26,7 +26,7 @@ MonoBehaviour:
   RelativeOffset: {x: 0, y: 0}
   ChargeTime: 2
   ChargeCooldown: 1
-  ProximityRange: 0
+  ProximityRange: 6
   AttackRange: 0
   BufferMinDistance: 1.5
   BufferMaxDistance: 3
@@ -34,4 +34,4 @@ MonoBehaviour:
   MaxDamage: 10
   MinDamage: 10
   ValueDiviation: 1
-  MovementAIType: 0
+  MovementAIType: 3

@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 5ca9af16de276e447910336ceb90ec83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7739153814172075096
+    second: BrownMantisAttack_0
+  - first:
+      213: -8244764501165424467
+    second: BrownMantisAttack_1
+  - first:
+      213: -6024379769848581238
+    second: BrownMantisAttack_2
+  - first:
+      213: -7376072573883720758
+    second: BrownMantisAttack_3
+  - first:
+      213: -8551966829930364131
+    second: BrownMantisAttack_4
+  - first:
+      213: -6343855162397018853
+    second: BrownMantisAttack_5
+  - first:
+      213: -8440632242591775607
+    second: BrownMantisAttack_6
+  - first:
+      213: 2938222711680301396
+    second: BrownMantisAttack_7
+  - first:
+      213: -9116873196641930040
+    second: BrownMantisAttack_8
+  - first:
+      213: -8245742381938345391
+    second: BrownMantisAttack_9
+  - first:
+      213: 2243466110864801238
+    second: BrownMantisAttack_10
+  - first:
+      213: -1465153768638630602
+    second: BrownMantisAttack_11
+  - first:
+      213: -4806243357718819717
+    second: BrownMantisAttack_12
+  - first:
+      213: -8211403114305345764
+    second: BrownMantisAttack_13
+  - first:
+      213: 6912144967670303202
+    second: BrownMantisAttack_14
+  - first:
+      213: -5427771039920111211
+    second: BrownMantisAttack_15
+  - first:
+      213: 7009727731316432636
+    second: BrownMantisAttack_16
+  - first:
+      213: 1809789720056737403
+    second: BrownMantisAttack_17
+  - first:
+      213: -8438044314821193987
+    second: BrownMantisAttack_18
+  - first:
+      213: 1971792122678511233
+    second: BrownMantisAttack_19
+  - first:
+      213: 135142894562426400
+    second: BrownMantisAttack_20
+  - first:
+      213: 2126830884931167548
+    second: BrownMantisAttack_21
+  - first:
+      213: -8189421296519346972
+    second: BrownMantisAttack_22
+  - first:
+      213: -3044177994588715705
+    second: BrownMantisAttack_23
+  - first:
+      213: -5181094225365552526
+    second: BrownMantisAttack_24
+  - first:
+      213: 6784257734017087859
+    second: BrownMantisAttack_25
+  - first:
+      213: -2865142388311200668
+    second: BrownMantisAttack_26
+  - first:
+      213: 6113938787788469906
+    second: BrownMantisAttack_27
+  - first:
+      213: 210424528236315291
+    second: BrownMantisAttack_28
+  - first:
+      213: 7716726632057044895
+    second: BrownMantisAttack_29
+  - first:
+      213: -2644932431341755217
+    second: BrownMantisAttack_30
+  - first:
+      213: -2897759163668129173
+    second: BrownMantisAttack_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BrownMantisAttack_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85406d3e36ff66b60800000000000000
+      internalID: 7739153814172075096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 192
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0c84b6e56b49d80800000000000000
+      internalID: -8244764501165424467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 192
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a833022948a156ca0800000000000000
+      internalID: -6024379769848581238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbd82cf21de2a990800000000000000
+      internalID: -7376072573883720758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 192
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13c31b7a7f415980800000000000000
+      internalID: -8551966829930364131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 65
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b153cca475916f7a0800000000000000
+      internalID: -6343855162397018853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 191
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984cb9c12b9dcda80800000000000000
+      internalID: -8440632242591775607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 191
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45970b82df9a6c820800000000000000
+      internalID: 2938222711680301396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4b0e3812c5a7180800000000000000
+      internalID: -9116873196641930040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_9
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a7e2fcdfc319d80800000000000000
+      internalID: -8245742381938345391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_10
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 127
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd39bb9a84622f10800000000000000
+      internalID: 2243466110864801238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63538fef86abaabe0800000000000000
+      internalID: -1465153768638630602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 127
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cc617712bcc4db0800000000000000
+      internalID: -4806243357718819717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 127
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c172b489f5c3b0e80800000000000000
+      internalID: -8211403114305345764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_14
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 127
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e90ef9d93fdcef50800000000000000
+      internalID: 6912144967670303202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 66
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591c86b2ffeaca4b0800000000000000
+      internalID: -5427771039920111211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 66
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe12558b3e874160800000000000000
+      internalID: 7009727731316432636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 64
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ea226692aad1910800000000000000
+      internalID: 1809789720056737403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 66
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe0410076b06ea80800000000000000
+      internalID: -8438044314821193987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 66
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1868a231d763d5b10800000000000000
+      internalID: 1971792122678511233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 66
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ebf402fbf10e100800000000000000
+      internalID: 135142894562426400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_21
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 66
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35e6a1eb65048d10800000000000000
+      internalID: 2126830884931167548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e402f068b4595e80800000000000000
+      internalID: -8189421296519346972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_23
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7458a7f1e38e0c5d0800000000000000
+      internalID: -3044177994588715705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272324da04e0918b0800000000000000
+      internalID: -5181094225365552526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_25
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379f8cce676862e50800000000000000
+      internalID: 6784257734017087859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cebc19d28fc38d0800000000000000
+      internalID: -2865142388311200668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2963d983fe219d450800000000000000
+      internalID: 6113938787788469906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_28
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 11
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b920e895ef39be200800000000000000
+      internalID: 210424528236315291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_29
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 10
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f7e84acf1571b60800000000000000
+      internalID: 7716726632057044895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_30
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4e6f697ff4b4bd0800000000000000
+      internalID: -2644932431341755217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownMantisAttack_31
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 10
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a9de4c46719c7d0800000000000000
+      internalID: -2897759163668129173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BrownMantisAttack_0: 7739153814172075096
+      BrownMantisAttack_1: -8244764501165424467
+      BrownMantisAttack_10: 2243466110864801238
+      BrownMantisAttack_11: -1465153768638630602
+      BrownMantisAttack_12: -4806243357718819717
+      BrownMantisAttack_13: -8211403114305345764
+      BrownMantisAttack_14: 6912144967670303202
+      BrownMantisAttack_15: -5427771039920111211
+      BrownMantisAttack_16: 7009727731316432636
+      BrownMantisAttack_17: 1809789720056737403
+      BrownMantisAttack_18: -8438044314821193987
+      BrownMantisAttack_19: 1971792122678511233
+      BrownMantisAttack_2: -6024379769848581238
+      BrownMantisAttack_20: 135142894562426400
+      BrownMantisAttack_21: 2126830884931167548
+      BrownMantisAttack_22: -8189421296519346972
+      BrownMantisAttack_23: -3044177994588715705
+      BrownMantisAttack_24: -5181094225365552526
+      BrownMantisAttack_25: 6784257734017087859
+      BrownMantisAttack_26: -2865142388311200668
+      BrownMantisAttack_27: 6113938787788469906
+      BrownMantisAttack_28: 210424528236315291
+      BrownMantisAttack_29: 7716726632057044895
+      BrownMantisAttack_3: -7376072573883720758
+      BrownMantisAttack_30: -2644932431341755217
+      BrownMantisAttack_31: -2897759163668129173
+      BrownMantisAttack_4: -8551966829930364131
+      BrownMantisAttack_5: -6343855162397018853
+      BrownMantisAttack_6: -8440632242591775607
+      BrownMantisAttack_7: 2938222711680301396
+      BrownMantisAttack_8: -9116873196641930040
+      BrownMantisAttack_9: -8245742381938345391
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
